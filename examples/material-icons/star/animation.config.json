@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0",
+  "id": "star",
+  "name": "Star",
+  "version": "0.1.0",
+  "description": "Animated star with an entrance and a gentle twinkle loop of wobble and shimmer.",
+  "asset": { "svg": "./assets/main.svg" },
+  "motion": {
+    "targets": "./motion/targets.json",
+    "timelines": "./motion/timelines.json",
+    "states": "./motion/states.json"
+  },
+  "accessibility": {
+    "title": "Star",
+    "description": "A star icon that twinkles with a subtle rotate wobble and opacity shimmer.",
+    "decorative": false
+  },
+  "reducedMotion": { "strategy": "static", "fallbackState": "idle" }
+}

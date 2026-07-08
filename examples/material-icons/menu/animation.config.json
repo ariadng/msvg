@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0",
+  "id": "menu",
+  "name": "Menu",
+  "version": "0.1.0",
+  "description": "Animated menu icon with a soft breathing scale pulse loop.",
+  "asset": {
+    "svg": "./assets/main.svg"
+  },
+  "motion": {
+    "targets": "./motion/targets.json",
+    "timelines": "./motion/timelines.json",
+    "states": "./motion/states.json"
+  },
+  "accessibility": {
+    "title": "Menu",
+    "description": "A three-line menu icon that softly breathes in and out.",
+    "decorative": false
+  },
+  "reducedMotion": {
+    "strategy": "static",
+    "fallbackState": "idle"
+  }
+}

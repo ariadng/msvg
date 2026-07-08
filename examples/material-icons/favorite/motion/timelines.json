@@ -1,0 +1,41 @@
+{
+  "intro": [
+    {
+      "target": "glyph",
+      "at": 0,
+      "keyframes": [
+        { "opacity": 0, "transform": "scale(0.6)" },
+        { "opacity": 1, "transform": "scale(1.12)", "offset": 0.7 },
+        { "opacity": 1, "transform": "scale(1)" }
+      ],
+      "options": { "duration": 500, "easing": "bounceSoft", "fill": "both" }
+    }
+  ],
+  "loadingLoop": [
+    {
+      "target": "glyph",
+      "at": 0,
+      "keyframes": [
+        { "transform": "scale(1)", "offset": 0, "easing": "emphasized" },
+        { "transform": "scale(1.15)", "offset": 0.12, "easing": "soft" },
+        { "transform": "scale(1)", "offset": 0.24, "easing": "emphasized" },
+        { "transform": "scale(1.08)", "offset": 0.34, "easing": "soft" },
+        { "transform": "scale(1)", "offset": 0.46, "easing": "soft" },
+        { "transform": "scale(1)", "offset": 1 }
+      ],
+      "options": { "duration": 1600, "easing": "soft", "fill": "both" }
+    }
+  ],
+  "hover": [
+    {
+      "target": "glyph",
+      "at": 0,
+      "keyframes": [
+        { "transform": "scale(1)" },
+        { "transform": "scale(1.12)" },
+        { "transform": "scale(1)" }
+      ],
+      "options": { "duration": 420, "easing": "bounceSoft", "fill": "both" }
+    }
+  ]
+}

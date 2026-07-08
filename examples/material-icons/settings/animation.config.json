@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0",
+  "id": "settings",
+  "name": "Settings",
+  "version": "0.1.0",
+  "description": "Animated settings gear with an entrance and a continuous spin loading loop.",
+  "asset": { "svg": "./assets/main.svg" },
+  "motion": {
+    "targets": "./motion/targets.json",
+    "timelines": "./motion/timelines.json",
+    "states": "./motion/states.json"
+  },
+  "accessibility": {
+    "title": "Settings",
+    "description": "A gear icon that spins continuously while settings are loading.",
+    "decorative": false
+  },
+  "reducedMotion": { "strategy": "static", "fallbackState": "idle" }
+}

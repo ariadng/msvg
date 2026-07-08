@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0",
+  "id": "search",
+  "name": "Search",
+  "version": "0.1.0",
+  "description": "Animated search icon with a circular lens-sweep scanning loop.",
+  "asset": {
+    "svg": "./assets/main.svg"
+  },
+  "motion": {
+    "targets": "./motion/targets.json",
+    "timelines": "./motion/timelines.json",
+    "states": "./motion/states.json"
+  },
+  "accessibility": {
+    "title": "Search",
+    "description": "A magnifying glass that drifts in a small circle as if scanning.",
+    "decorative": false
+  },
+  "reducedMotion": {
+    "strategy": "static",
+    "fallbackState": "idle"
+  }
+}

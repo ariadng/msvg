@@ -1,0 +1,12 @@
+{
+  "initial": "idle",
+  "states": {
+    "idle": {
+      "on": { "LOAD": "loading" }
+    },
+    "loading": {
+      "onEnter": { "timeline": "loadingLoop", "loop": true },
+      "on": { "RESET": "idle" }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "1.0",
+  "id": "person",
+  "name": "Person",
+  "version": "0.1.0",
+  "description": "Animated person icon with a calm breathing loading loop.",
+
+  "asset": {
+    "svg": "./assets/main.svg"
+  },
+
+  "motion": {
+    "targets": "./motion/targets.json",
+    "timelines": "./motion/timelines.json",
+    "states": "./motion/states.json"
+  },
+
+  "accessibility": {
+    "title": "Person",
+    "description": "A person icon that breathes calmly with a subtle scale and vertical bob.",
+    "decorative": false
+  },
+
+  "reducedMotion": {
+    "strategy": "static",
+    "fallbackState": "idle"
+  }
+}

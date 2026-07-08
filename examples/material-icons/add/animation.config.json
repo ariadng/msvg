@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0",
+  "id": "add",
+  "name": "Add",
+  "version": "0.1.0",
+  "description": "Animated add/plus with an entrance and a seamless quarter-turn pulse loop.",
+  "asset": { "svg": "./assets/main.svg" },
+  "motion": {
+    "targets": "./motion/targets.json",
+    "timelines": "./motion/timelines.json",
+    "states": "./motion/states.json"
+  },
+  "accessibility": {
+    "title": "Add",
+    "description": "A plus icon that pulses through a quarter turn while working.",
+    "decorative": false
+  },
+  "reducedMotion": { "strategy": "static", "fallbackState": "idle" }
+}

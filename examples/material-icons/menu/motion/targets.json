@@ -1,0 +1,4 @@
+{
+  "root": "[data-animation='menu']",
+  "glyph": "[data-part='glyph']"
+}

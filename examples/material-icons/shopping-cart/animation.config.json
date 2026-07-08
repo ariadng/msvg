@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "1.0",
+  "id": "shopping-cart",
+  "name": "Shopping Cart",
+  "version": "0.1.0",
+  "description": "Animated shopping cart with a rolling-nudge loading loop.",
+
+  "asset": {
+    "svg": "./assets/main.svg"
+  },
+
+  "motion": {
+    "targets": "./motion/targets.json",
+    "timelines": "./motion/timelines.json",
+    "states": "./motion/states.json"
+  },
+
+  "accessibility": {
+    "title": "Shopping Cart",
+    "description": "A shopping cart icon that rolls forward with a small bounce and returns to its start.",
+    "decorative": false
+  },
+
+  "reducedMotion": {
+    "strategy": "static",
+    "fallbackState": "idle"
+  }
+}

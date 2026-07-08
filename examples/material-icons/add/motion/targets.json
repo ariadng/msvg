@@ -1,0 +1,4 @@
+{
+  "root": "[data-animation='add']",
+  "glyph": "[data-part='glyph']"
+}

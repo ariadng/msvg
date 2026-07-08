@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "1.0",
+  "id": "delete",
+  "name": "Delete",
+  "version": "0.1.0",
+  "description": "Animated delete (trash) icon with a gentle pendulum tilt loading loop.",
+
+  "asset": {
+    "svg": "./assets/main.svg"
+  },
+
+  "motion": {
+    "targets": "./motion/targets.json",
+    "timelines": "./motion/timelines.json",
+    "states": "./motion/states.json"
+  },
+
+  "accessibility": {
+    "title": "Delete",
+    "description": "A trash can icon that tilts gently back and forth while working.",
+    "decorative": false
+  },
+
+  "reducedMotion": {
+    "strategy": "static",
+    "fallbackState": "idle"
+  }
+}

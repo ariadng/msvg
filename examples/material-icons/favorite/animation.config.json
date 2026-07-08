@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0",
+  "id": "favorite",
+  "name": "Favorite",
+  "version": "0.1.0",
+  "description": "Animated favorite heart with an entrance pop and a double-thump heartbeat loop.",
+  "asset": { "svg": "./assets/main.svg" },
+  "motion": {
+    "targets": "./motion/targets.json",
+    "timelines": "./motion/timelines.json",
+    "states": "./motion/states.json"
+  },
+  "accessibility": {
+    "title": "Favorite",
+    "description": "A heart icon that beats with a gentle double-thump pulse.",
+    "decorative": false
+  },
+  "reducedMotion": { "strategy": "static", "fallbackState": "idle" }
+}

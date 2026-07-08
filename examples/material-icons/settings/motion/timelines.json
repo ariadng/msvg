@@ -1,0 +1,36 @@
+{
+  "intro": [
+    {
+      "target": "glyph",
+      "at": 0,
+      "keyframes": [
+        { "opacity": 0, "transform": "rotate(-45deg) scale(0.85)" },
+        { "opacity": 1, "transform": "rotate(0deg) scale(1)" }
+      ],
+      "options": { "duration": 480, "easing": "standard", "fill": "both" }
+    }
+  ],
+  "loadingLoop": [
+    {
+      "target": "glyph",
+      "at": 0,
+      "keyframes": [
+        { "transform": "rotate(0deg)" },
+        { "transform": "rotate(360deg)" }
+      ],
+      "options": { "duration": 2400, "easing": "linear", "fill": "both" }
+    }
+  ],
+  "hover": [
+    {
+      "target": "glyph",
+      "at": 0,
+      "keyframes": [
+        { "transform": "rotate(0deg) scale(1)" },
+        { "transform": "rotate(20deg) scale(1.05)" },
+        { "transform": "rotate(0deg) scale(1)" }
+      ],
+      "options": { "duration": 500, "easing": "emphasized", "fill": "both" }
+    }
+  ]
+}

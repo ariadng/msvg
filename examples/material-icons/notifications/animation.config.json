@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "1.0",
+  "id": "notifications",
+  "name": "Notifications",
+  "version": "0.1.0",
+  "description": "Animated notifications bell with a decaying swing loading loop.",
+
+  "asset": {
+    "svg": "./assets/main.svg"
+  },
+
+  "motion": {
+    "targets": "./motion/targets.json",
+    "timelines": "./motion/timelines.json",
+    "states": "./motion/states.json"
+  },
+
+  "accessibility": {
+    "title": "Notifications",
+    "description": "A bell icon that swings and settles as if it has just been rung.",
+    "decorative": false
+  },
+
+  "reducedMotion": {
+    "strategy": "static",
+    "fallbackState": "idle"
+  }
+}

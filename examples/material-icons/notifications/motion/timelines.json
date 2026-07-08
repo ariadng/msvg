@@ -1,0 +1,45 @@
+{
+  "intro": [
+    {
+      "target": "glyph",
+      "at": 0,
+      "keyframes": [
+        { "opacity": 0, "transform": "translateY(-8px) scale(0.9)" },
+        { "opacity": 1, "transform": "translateY(0) scale(1)" }
+      ],
+      "options": { "duration": 400, "easing": "soft", "fill": "both" }
+    }
+  ],
+
+  "loadingLoop": [
+    {
+      "target": "glyph",
+      "at": 0,
+      "keyframes": [
+        { "offset": 0, "transform": "rotate(0deg)" },
+        { "offset": 0.12, "transform": "rotate(12deg)" },
+        { "offset": 0.3, "transform": "rotate(-9deg)" },
+        { "offset": 0.48, "transform": "rotate(6deg)" },
+        { "offset": 0.64, "transform": "rotate(-3deg)" },
+        { "offset": 0.8, "transform": "rotate(1.5deg)" },
+        { "offset": 1, "transform": "rotate(0deg)" }
+      ],
+      "options": { "duration": 2200, "easing": "soft", "fill": "both" }
+    }
+  ],
+
+  "hover": [
+    {
+      "target": "glyph",
+      "at": 0,
+      "keyframes": [
+        { "transform": "rotate(0deg)" },
+        { "transform": "rotate(10deg)" },
+        { "transform": "rotate(-7deg)" },
+        { "transform": "rotate(4deg)" },
+        { "transform": "rotate(0deg)" }
+      ],
+      "options": { "duration": 520, "easing": "standard", "fill": "both" }
+    }
+  ]
+}
