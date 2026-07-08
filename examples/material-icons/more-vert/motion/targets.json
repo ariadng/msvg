@@ -1,0 +1,7 @@
+{
+  "root": "[data-animation='more-vert']",
+  "glyph": "[data-part='glyph']",
+  "dotTop": "[data-part='dotTop']",
+  "dotMiddle": "[data-part='dotMiddle']",
+  "dotBottom": "[data-part='dotBottom']"
+}

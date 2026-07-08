@@ -1,0 +1,104 @@
+{
+  "intro": [
+    {
+      "target": "glyph",
+      "at": 0,
+      "keyframes": [
+        {
+          "offset": 0,
+          "transform": "scale(0.92)",
+          "opacity": 0
+        },
+        {
+          "offset": 1,
+          "transform": "scale(1)",
+          "opacity": 1
+        }
+      ],
+      "options": {
+        "duration": 420,
+        "easing": "soft",
+        "fill": "both"
+      }
+    }
+  ],
+  "loadingLoop": [
+    {
+      "target": "glyph",
+      "at": 0,
+      "keyframes": [
+        {
+          "offset": 0,
+          "transform": "rotate(0deg)",
+          "easing": "linear"
+        },
+        {
+          "offset": 0.06,
+          "transform": "rotate(0deg)",
+          "easing": "standard"
+        },
+        {
+          "offset": 0.12,
+          "transform": "rotate(-8deg)",
+          "easing": "soft"
+        },
+        {
+          "offset": 0.22,
+          "transform": "rotate(8deg)",
+          "easing": "soft"
+        },
+        {
+          "offset": 0.32,
+          "transform": "rotate(-3deg)",
+          "easing": "soft"
+        },
+        {
+          "offset": 0.4,
+          "transform": "rotate(0deg)",
+          "easing": "soft"
+        },
+        {
+          "offset": 1,
+          "transform": "rotate(0deg)"
+        }
+      ],
+      "options": {
+        "duration": 2600,
+        "easing": "linear",
+        "fill": "both"
+      }
+    }
+  ],
+  "hover": [
+    {
+      "target": "glyph",
+      "at": 0,
+      "keyframes": [
+        {
+          "offset": 0,
+          "transform": "rotate(0deg)",
+          "easing": "soft"
+        },
+        {
+          "offset": 0.28,
+          "transform": "rotate(-8deg)",
+          "easing": "soft"
+        },
+        {
+          "offset": 0.6,
+          "transform": "rotate(8deg)",
+          "easing": "soft"
+        },
+        {
+          "offset": 1,
+          "transform": "rotate(0deg)"
+        }
+      ],
+      "options": {
+        "duration": 640,
+        "easing": "linear",
+        "fill": "both"
+      }
+    }
+  ]
+}

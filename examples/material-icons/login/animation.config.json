@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0",
+  "id": "login",
+  "name": "Login",
+  "version": "0.1.0",
+  "description": "The arrow slides into the doorway and back, as if signing in.",
+  "asset": {
+    "svg": "./assets/main.svg"
+  },
+  "motion": {
+    "targets": "./motion/targets.json",
+    "timelines": "./motion/timelines.json",
+    "states": "./motion/states.json"
+  },
+  "accessibility": {
+    "title": "Sign in",
+    "description": "An arrow that slides into a doorway and returns, as if signing in.",
+    "decorative": false
+  },
+  "reducedMotion": {
+    "strategy": "static",
+    "fallbackState": "idle"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0",
+  "id": "groups",
+  "name": "Groups",
+  "version": "0.1.0",
+  "description": "Animated groups icon whose central member breathes once per loop \u2014 a team present.",
+  "asset": {
+    "svg": "./assets/main.svg"
+  },
+  "motion": {
+    "targets": "./motion/targets.json",
+    "timelines": "./motion/timelines.json",
+    "states": "./motion/states.json"
+  },
+  "accessibility": {
+    "title": "Groups",
+    "description": "A group of people whose central figure breathes gently \u2014 a warm, present team.",
+    "decorative": false
+  },
+  "reducedMotion": {
+    "strategy": "static",
+    "fallbackState": "idle"
+  }
+}

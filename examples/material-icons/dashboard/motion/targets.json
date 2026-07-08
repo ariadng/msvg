@@ -1,0 +1,8 @@
+{
+  "root": "[data-animation='dashboard']",
+  "glyph": "[data-part='glyph']",
+  "tileTopLeft": "[data-part='tileTopLeft']",
+  "tileTopRight": "[data-part='tileTopRight']",
+  "tileBottomRight": "[data-part='tileBottomRight']",
+  "tileBottomLeft": "[data-part='tileBottomLeft']"
+}

@@ -1,0 +1,7 @@
+{
+  "root": "[data-animation='list']",
+  "glyph": "[data-part='glyph']",
+  "rowTop": "[data-part='rowTop']",
+  "rowMid": "[data-part='rowMid']",
+  "rowBottom": "[data-part='rowBottom']"
+}

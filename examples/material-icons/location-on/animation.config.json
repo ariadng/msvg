@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0",
+  "id": "location-on",
+  "name": "Location On",
+  "version": "0.1.0",
+  "description": "Animated map pin: it hops and lands planted on its tip.",
+  "asset": {
+    "svg": "./assets/main.svg"
+  },
+  "motion": {
+    "targets": "./motion/targets.json",
+    "timelines": "./motion/timelines.json",
+    "states": "./motion/states.json"
+  },
+  "accessibility": {
+    "title": "Your location",
+    "description": "A map pin that hops up and lands with a small squash at its tip, marking \u201cyou are here.\u201d",
+    "decorative": false
+  },
+  "reducedMotion": {
+    "strategy": "static",
+    "fallbackState": "idle"
+  }
+}

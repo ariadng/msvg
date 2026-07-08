@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0",
+  "id": "lock",
+  "name": "Lock",
+  "version": "0.1.0",
+  "description": "Animated padlock: a locked-tight wiggle.",
+  "asset": {
+    "svg": "./assets/main.svg"
+  },
+  "motion": {
+    "targets": "./motion/targets.json",
+    "timelines": "./motion/timelines.json",
+    "states": "./motion/states.json"
+  },
+  "accessibility": {
+    "title": "Locked",
+    "description": "A padlock that gives two tiny shackle-testing shakes, then holds firmly still.",
+    "decorative": false
+  },
+  "reducedMotion": {
+    "strategy": "static",
+    "fallbackState": "idle"
+  }
+}

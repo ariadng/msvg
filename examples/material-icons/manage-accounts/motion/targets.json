@@ -1,0 +1,6 @@
+{
+  "root": "[data-animation='manage-accounts']",
+  "glyph": "[data-part='glyph']",
+  "person": "[data-part='person']",
+  "gear": "[data-part='gear']"
+}

@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0",
+  "id": "cancel",
+  "name": "Cancel",
+  "version": "0.1.0",
+  "description": "Animated cancel icon that firmly shakes its head no each loop.",
+  "asset": {
+    "svg": "./assets/main.svg"
+  },
+  "motion": {
+    "targets": "./motion/targets.json",
+    "timelines": "./motion/timelines.json",
+    "states": "./motion/states.json"
+  },
+  "accessibility": {
+    "title": "Cancel",
+    "description": "An x-in-circle that firmly shakes its head no \u2014 a decisive cancelling gesture \u2014 then rests.",
+    "decorative": false
+  },
+  "reducedMotion": {
+    "strategy": "static",
+    "fallbackState": "idle"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0",
+  "id": "dashboard",
+  "name": "Dashboard",
+  "version": "0.1.0",
+  "description": "Four dashboard tiles that pulse in reading order as widgets refresh.",
+  "asset": {
+    "svg": "./assets/main.svg"
+  },
+  "motion": {
+    "targets": "./motion/targets.json",
+    "timelines": "./motion/timelines.json",
+    "states": "./motion/states.json"
+  },
+  "accessibility": {
+    "title": "Dashboard",
+    "description": "Four tiles that pulse one after another in reading order, like widgets refreshing.",
+    "decorative": false
+  },
+  "reducedMotion": {
+    "strategy": "static",
+    "fallbackState": "idle"
+  }
+}

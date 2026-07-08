@@ -1,0 +1,7 @@
+{
+  "root": "[data-animation='description']",
+  "glyph": "[data-part='glyph']",
+  "page": "[data-part='page']",
+  "textTop": "[data-part='textTop']",
+  "textBottom": "[data-part='textBottom']"
+}

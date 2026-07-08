@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0",
+  "id": "arrow-back-ios",
+  "name": "Arrow back",
+  "version": "0.1.0",
+  "description": "Animated back chevron that beckons leftward each loop to invite going back.",
+  "asset": {
+    "svg": "./assets/main.svg"
+  },
+  "motion": {
+    "targets": "./motion/targets.json",
+    "timelines": "./motion/timelines.json",
+    "states": "./motion/states.json"
+  },
+  "accessibility": {
+    "title": "Arrow back",
+    "description": "A chevron that nudges leftward and returns \u2014 a gentle beckon to go back.",
+    "decorative": false
+  },
+  "reducedMotion": {
+    "strategy": "static",
+    "fallbackState": "idle"
+  }
+}

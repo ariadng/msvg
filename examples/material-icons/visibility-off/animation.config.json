@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0",
+  "id": "visibility-off",
+  "name": "Visibility Off",
+  "version": "0.1.0",
+  "description": "A crossed-out eye that squeezes shut and reopens in a privacy wink.",
+  "asset": {
+    "svg": "./assets/main.svg"
+  },
+  "motion": {
+    "targets": "./motion/targets.json",
+    "timelines": "./motion/timelines.json",
+    "states": "./motion/states.json"
+  },
+  "accessibility": {
+    "title": "Hidden",
+    "description": "A crossed-out eye that briefly squeezes shut and reopens.",
+    "decorative": false
+  },
+  "reducedMotion": {
+    "strategy": "static",
+    "fallbackState": "idle"
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "intro": [
+    {
+      "target": "glyph",
+      "at": 0,
+      "keyframes": [
+        {
+          "offset": 0,
+          "transform": "translateY(-8px)",
+          "opacity": 0
+        },
+        {
+          "offset": 1,
+          "transform": "translateY(0px)",
+          "opacity": 1
+        }
+      ],
+      "options": {
+        "duration": 420,
+        "easing": "soft",
+        "fill": "both"
+      }
+    }
+  ],
+  "loadingLoop": [
+    {
+      "target": "arrow",
+      "at": 0,
+      "keyframes": [
+        {
+          "offset": 0,
+          "transform": "translateY(0px)",
+          "opacity": 1,
+          "easing": "linear"
+        },
+        {
+          "offset": 0.14,
+          "transform": "translateY(0px)",
+          "opacity": 1,
+          "easing": "standard"
+        },
+        {
+          "offset": 0.4,
+          "transform": "translateY(50px)",
+          "opacity": 0,
+          "easing": "soft"
+        },
+        {
+          "offset": 0.41,
+          "transform": "translateY(-20px)",
+          "opacity": 0,
+          "easing": "linear"
+        },
+        {
+          "offset": 0.56,
+          "transform": "translateY(0px)",
+          "opacity": 1,
+          "easing": "soft"
+        },
+        {
+          "offset": 1,
+          "transform": "translateY(0px)",
+          "opacity": 1
+        }
+      ],
+      "options": {
+        "duration": 2400,
+        "easing": "linear",
+        "fill": "both"
+      }
+    }
+  ],
+  "hover": [
+    {
+      "target": "arrow",
+      "at": 0,
+      "keyframes": [
+        {
+          "offset": 0,
+          "transform": "translateY(0px)",
+          "easing": "soft"
+        },
+        {
+          "offset": 0.4,
+          "transform": "translateY(10px)",
+          "easing": "soft"
+        },
+        {
+          "offset": 1,
+          "transform": "translateY(0px)"
+        }
+      ],
+      "options": {
+        "duration": 520,
+        "easing": "linear",
+        "fill": "both"
+      }
+    }
+  ]
+}

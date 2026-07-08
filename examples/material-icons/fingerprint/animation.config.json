@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0",
+  "id": "fingerprint",
+  "name": "Fingerprint",
+  "version": "0.1.0",
+  "description": "A fingerprint that dims and swells in one slow biometric scan pass.",
+  "asset": {
+    "svg": "./assets/main.svg"
+  },
+  "motion": {
+    "targets": "./motion/targets.json",
+    "timelines": "./motion/timelines.json",
+    "states": "./motion/states.json"
+  },
+  "accessibility": {
+    "title": "Fingerprint",
+    "description": "A fingerprint that fades and gently grows in a slow scanning sweep.",
+    "decorative": false
+  },
+  "reducedMotion": {
+    "strategy": "static",
+    "fallbackState": "idle"
+  }
+}

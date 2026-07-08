@@ -1,0 +1,4 @@
+{
+  "root": "[data-animation='add-circle']",
+  "glyph": "[data-part='glyph']"
+}

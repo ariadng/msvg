@@ -1,0 +1,224 @@
+{
+  "intro": [
+    {
+      "target": "glyph",
+      "at": 0,
+      "keyframes": [
+        {
+          "offset": 0,
+          "transform": "scale(0.94)",
+          "opacity": 0
+        },
+        {
+          "offset": 1,
+          "transform": "scale(1)",
+          "opacity": 1
+        }
+      ],
+      "options": {
+        "duration": 400,
+        "easing": "soft",
+        "fill": "both"
+      }
+    }
+  ],
+  "loadingLoop": [
+    {
+      "target": "dotTop",
+      "at": 0,
+      "keyframes": [
+        {
+          "offset": 0,
+          "transform": "translateY(0px)",
+          "easing": "linear"
+        },
+        {
+          "offset": 0.05,
+          "transform": "translateY(0px)",
+          "easing": "standard"
+        },
+        {
+          "offset": 0.11,
+          "transform": "translateY(-25px)",
+          "easing": "soft"
+        },
+        {
+          "offset": 0.2,
+          "transform": "translateY(0px)",
+          "easing": "bounceSoft"
+        },
+        {
+          "offset": 1,
+          "transform": "translateY(0px)"
+        }
+      ],
+      "options": {
+        "duration": 2000,
+        "easing": "linear",
+        "fill": "both"
+      }
+    },
+    {
+      "target": "dotMiddle",
+      "at": 0,
+      "keyframes": [
+        {
+          "offset": 0,
+          "transform": "translateY(0px)",
+          "easing": "linear"
+        },
+        {
+          "offset": 0.11,
+          "transform": "translateY(0px)",
+          "easing": "standard"
+        },
+        {
+          "offset": 0.17,
+          "transform": "translateY(-25px)",
+          "easing": "soft"
+        },
+        {
+          "offset": 0.26,
+          "transform": "translateY(0px)",
+          "easing": "bounceSoft"
+        },
+        {
+          "offset": 1,
+          "transform": "translateY(0px)"
+        }
+      ],
+      "options": {
+        "duration": 2000,
+        "easing": "linear",
+        "fill": "both"
+      }
+    },
+    {
+      "target": "dotBottom",
+      "at": 0,
+      "keyframes": [
+        {
+          "offset": 0,
+          "transform": "translateY(0px)",
+          "easing": "linear"
+        },
+        {
+          "offset": 0.17,
+          "transform": "translateY(0px)",
+          "easing": "standard"
+        },
+        {
+          "offset": 0.23,
+          "transform": "translateY(-25px)",
+          "easing": "soft"
+        },
+        {
+          "offset": 0.32,
+          "transform": "translateY(0px)",
+          "easing": "bounceSoft"
+        },
+        {
+          "offset": 1,
+          "transform": "translateY(0px)"
+        }
+      ],
+      "options": {
+        "duration": 2000,
+        "easing": "linear",
+        "fill": "both"
+      }
+    }
+  ],
+  "hover": [
+    {
+      "target": "dotTop",
+      "at": 0,
+      "keyframes": [
+        {
+          "offset": 0,
+          "transform": "translateY(0px)",
+          "easing": "soft"
+        },
+        {
+          "offset": 0.3,
+          "transform": "translateY(-25px)",
+          "easing": "soft"
+        },
+        {
+          "offset": 0.6,
+          "transform": "translateY(0px)",
+          "easing": "bounceSoft"
+        },
+        {
+          "offset": 1,
+          "transform": "translateY(0px)"
+        }
+      ],
+      "options": {
+        "duration": 600,
+        "easing": "linear",
+        "fill": "both"
+      }
+    },
+    {
+      "target": "dotMiddle",
+      "at": 0,
+      "keyframes": [
+        {
+          "offset": 0,
+          "transform": "translateY(0px)",
+          "easing": "soft"
+        },
+        {
+          "offset": 0.4,
+          "transform": "translateY(-25px)",
+          "easing": "soft"
+        },
+        {
+          "offset": 0.7,
+          "transform": "translateY(0px)",
+          "easing": "bounceSoft"
+        },
+        {
+          "offset": 1,
+          "transform": "translateY(0px)"
+        }
+      ],
+      "options": {
+        "duration": 600,
+        "easing": "linear",
+        "fill": "both"
+      }
+    },
+    {
+      "target": "dotBottom",
+      "at": 0,
+      "keyframes": [
+        {
+          "offset": 0,
+          "transform": "translateY(0px)",
+          "easing": "soft"
+        },
+        {
+          "offset": 0.5,
+          "transform": "translateY(-25px)",
+          "easing": "soft"
+        },
+        {
+          "offset": 0.8,
+          "transform": "translateY(0px)",
+          "easing": "bounceSoft"
+        },
+        {
+          "offset": 1,
+          "transform": "translateY(0px)"
+        }
+      ],
+      "options": {
+        "duration": 600,
+        "easing": "linear",
+        "fill": "both"
+      }
+    }
+  ]
+}

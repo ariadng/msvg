@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0",
+  "id": "manage-accounts",
+  "name": "Manage accounts",
+  "version": "0.1.0",
+  "description": "Animated account settings whose gear ratchets each loop while the person stays calm.",
+  "asset": {
+    "svg": "./assets/main.svg"
+  },
+  "motion": {
+    "targets": "./motion/targets.json",
+    "timelines": "./motion/timelines.json",
+    "states": "./motion/states.json"
+  },
+  "accessibility": {
+    "title": "Manage accounts",
+    "description": "A person beside a gear that ratchets forward in two steps and returns \u2014 settings applied to the account.",
+    "decorative": false
+  },
+  "reducedMotion": {
+    "strategy": "static",
+    "fallbackState": "idle"
+  }
+}

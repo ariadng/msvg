@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0",
+  "id": "visibility",
+  "name": "Visibility",
+  "version": "0.1.0",
+  "description": "Animated eye: a real blink, then a subtle glance.",
+  "asset": {
+    "svg": "./assets/main.svg"
+  },
+  "motion": {
+    "targets": "./motion/targets.json",
+    "timelines": "./motion/timelines.json",
+    "states": "./motion/states.json"
+  },
+  "accessibility": {
+    "title": "Visible",
+    "description": "An eye that blinks and glances left-right to signal active watching.",
+    "decorative": false
+  },
+  "reducedMotion": {
+    "strategy": "static",
+    "fallbackState": "idle"
+  }
+}

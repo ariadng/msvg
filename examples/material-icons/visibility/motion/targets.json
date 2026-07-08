@@ -1,0 +1,6 @@
+{
+  "root": "[data-animation='visibility']",
+  "glyph": "[data-part='glyph']",
+  "eye": "[data-part='eye']",
+  "pupil": "[data-part='pupil']"
+}

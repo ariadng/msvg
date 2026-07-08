@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0",
+  "id": "face",
+  "name": "Face",
+  "version": "0.1.0",
+  "description": "Animated face whose eyes blink together once per loop \u2014 a friendly presence.",
+  "asset": {
+    "svg": "./assets/main.svg"
+  },
+  "motion": {
+    "targets": "./motion/targets.json",
+    "timelines": "./motion/timelines.json",
+    "states": "./motion/states.json"
+  },
+  "accessibility": {
+    "title": "Face",
+    "description": "A friendly face that blinks its eyes together once per loop while the face stays still.",
+    "decorative": false
+  },
+  "reducedMotion": {
+    "strategy": "static",
+    "fallbackState": "idle"
+  }
+}

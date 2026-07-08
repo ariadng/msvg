@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0",
+  "id": "language",
+  "name": "Language",
+  "version": "0.1.0",
+  "description": "Animated globe that breathes once per loop for a calm worldwide presence.",
+  "asset": {
+    "svg": "./assets/main.svg"
+  },
+  "motion": {
+    "targets": "./motion/targets.json",
+    "timelines": "./motion/timelines.json",
+    "states": "./motion/states.json"
+  },
+  "accessibility": {
+    "title": "Language",
+    "description": "A globe that breathes \u2014 a slow scale to 1.05 and back \u2014 conveying calm global reach.",
+    "decorative": false
+  },
+  "reducedMotion": {
+    "strategy": "static",
+    "fallbackState": "idle"
+  }
+}

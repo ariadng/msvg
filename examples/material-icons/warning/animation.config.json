@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0",
+  "id": "warning",
+  "name": "Warning",
+  "version": "0.1.0",
+  "description": "A hazard triangle that gives two quick emphasis pulses then holds calm.",
+  "asset": {
+    "svg": "./assets/main.svg"
+  },
+  "motion": {
+    "targets": "./motion/targets.json",
+    "timelines": "./motion/timelines.json",
+    "states": "./motion/states.json"
+  },
+  "accessibility": {
+    "title": "Warning",
+    "description": "A warning triangle that pulses twice for attention then rests calmly.",
+    "decorative": false
+  },
+  "reducedMotion": {
+    "strategy": "static",
+    "fallbackState": "idle"
+  }
+}

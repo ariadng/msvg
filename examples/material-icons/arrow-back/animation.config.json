@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0",
+  "id": "arrow-back",
+  "name": "Arrow Back",
+  "version": "0.1.0",
+  "description": "Animated back arrow: one leftward beckon.",
+  "asset": {
+    "svg": "./assets/main.svg"
+  },
+  "motion": {
+    "targets": "./motion/targets.json",
+    "timelines": "./motion/timelines.json",
+    "states": "./motion/states.json"
+  },
+  "accessibility": {
+    "title": "Back",
+    "description": "A left-pointing arrow that beckons leftward and returns, meaning \u201cgo back.\u201d",
+    "decorative": false
+  },
+  "reducedMotion": {
+    "strategy": "static",
+    "fallbackState": "idle"
+  }
+}

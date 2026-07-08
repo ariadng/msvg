@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0",
+  "id": "event",
+  "name": "Event",
+  "version": "0.1.0",
+  "description": "A calendar whose highlighted date pops to mark an upcoming event.",
+  "asset": {
+    "svg": "./assets/main.svg"
+  },
+  "motion": {
+    "targets": "./motion/targets.json",
+    "timelines": "./motion/timelines.json",
+    "states": "./motion/states.json"
+  },
+  "accessibility": {
+    "title": "Event",
+    "description": "A calendar with a highlighted date that pops to mark an upcoming event.",
+    "decorative": false
+  },
+  "reducedMotion": {
+    "strategy": "static",
+    "fallbackState": "idle"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0",
+  "id": "email",
+  "name": "Email",
+  "version": "0.1.0",
+  "description": "Animated envelope: new mail drops in and settles.",
+  "asset": {
+    "svg": "./assets/main.svg"
+  },
+  "motion": {
+    "targets": "./motion/targets.json",
+    "timelines": "./motion/timelines.json",
+    "states": "./motion/states.json"
+  },
+  "accessibility": {
+    "title": "Email",
+    "description": "An envelope that lifts and drops with a soft landing squash, as if new mail just arrived.",
+    "decorative": false
+  },
+  "reducedMotion": {
+    "strategy": "static",
+    "fallbackState": "idle"
+  }
+}

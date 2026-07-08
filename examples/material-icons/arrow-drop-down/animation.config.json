@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0",
+  "id": "arrow-drop-down",
+  "name": "Arrow drop down",
+  "version": "0.1.0",
+  "description": "Animated dropdown caret that dips downward each loop to reveal options below.",
+  "asset": {
+    "svg": "./assets/main.svg"
+  },
+  "motion": {
+    "targets": "./motion/targets.json",
+    "timelines": "./motion/timelines.json",
+    "states": "./motion/states.json"
+  },
+  "accessibility": {
+    "title": "Arrow drop down",
+    "description": "A caret that dips downward and springs back \u2014 pointing to options below.",
+    "decorative": false
+  },
+  "reducedMotion": {
+    "strategy": "static",
+    "fallbackState": "idle"
+  }
+}

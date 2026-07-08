@@ -1,0 +1,6 @@
+{
+  "root": "[data-animation='schedule']",
+  "glyph": "[data-part='glyph']",
+  "dial": "[data-part='dial']",
+  "hands": "[data-part='hands']"
+}

@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0",
+  "id": "content-copy",
+  "name": "Content Copy",
+  "version": "0.1.0",
+  "description": "The front sheet lifts away and returns, as if a copy is being taken.",
+  "asset": {
+    "svg": "./assets/main.svg"
+  },
+  "motion": {
+    "targets": "./motion/targets.json",
+    "timelines": "./motion/timelines.json",
+    "states": "./motion/states.json"
+  },
+  "accessibility": {
+    "title": "Copy",
+    "description": "Two stacked sheets where the front sheet lifts away and returns, as if duplicating.",
+    "decorative": false
+  },
+  "reducedMotion": {
+    "strategy": "static",
+    "fallbackState": "idle"
+  }
+}

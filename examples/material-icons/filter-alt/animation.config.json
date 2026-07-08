@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0",
+  "id": "filter-alt",
+  "name": "Filter",
+  "version": "0.1.0",
+  "description": "A funnel that rocks gently, as if sifting items through a sieve.",
+  "asset": {
+    "svg": "./assets/main.svg"
+  },
+  "motion": {
+    "targets": "./motion/targets.json",
+    "timelines": "./motion/timelines.json",
+    "states": "./motion/states.json"
+  },
+  "accessibility": {
+    "title": "Filter",
+    "description": "A funnel that rocks back and forth twice as if shaking items through.",
+    "decorative": false
+  },
+  "reducedMotion": {
+    "strategy": "static",
+    "fallbackState": "idle"
+  }
+}

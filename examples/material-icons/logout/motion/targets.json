@@ -1,0 +1,6 @@
+{
+  "root": "[data-animation='logout']",
+  "glyph": "[data-part='glyph']",
+  "doorFrame": "[data-part='doorFrame']",
+  "arrow": "[data-part='arrow']"
+}

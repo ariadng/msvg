@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0",
+  "id": "verified",
+  "name": "Verified",
+  "version": "0.1.0",
+  "description": "Animated verified badge with one proud stamp-pulse per loop.",
+  "asset": {
+    "svg": "./assets/main.svg"
+  },
+  "motion": {
+    "targets": "./motion/targets.json",
+    "timelines": "./motion/timelines.json",
+    "states": "./motion/states.json"
+  },
+  "accessibility": {
+    "title": "Verified",
+    "description": "A verification badge that gives one proud stamp-pulse \u2014 a scale and flick \u2014 confirming authenticity.",
+    "decorative": false
+  },
+  "reducedMotion": {
+    "strategy": "static",
+    "fallbackState": "idle"
+  }
+}

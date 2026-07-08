@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0",
+  "id": "help-outline",
+  "name": "Help",
+  "version": "0.1.0",
+  "description": "Animated help icon whose question mark tilts curiously each loop.",
+  "asset": {
+    "svg": "./assets/main.svg"
+  },
+  "motion": {
+    "targets": "./motion/targets.json",
+    "timelines": "./motion/timelines.json",
+    "states": "./motion/states.json"
+  },
+  "accessibility": {
+    "title": "Help",
+    "description": "A question mark that tilts its head curiously, holds a beat, and returns \u2014 inviting a question.",
+    "decorative": false
+  },
+  "reducedMotion": {
+    "strategy": "static",
+    "fallbackState": "idle"
+  }
+}

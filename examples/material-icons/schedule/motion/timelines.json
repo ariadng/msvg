@@ -1,0 +1,104 @@
+{
+  "intro": [
+    {
+      "target": "glyph",
+      "at": 0,
+      "keyframes": [
+        {
+          "offset": 0,
+          "transform": "scale(0.94)",
+          "opacity": 0
+        },
+        {
+          "offset": 1,
+          "transform": "scale(1)",
+          "opacity": 1
+        }
+      ],
+      "options": {
+        "duration": 420,
+        "easing": "soft",
+        "fill": "both"
+      }
+    }
+  ],
+  "loadingLoop": [
+    {
+      "target": "hands",
+      "at": 0,
+      "keyframes": [
+        {
+          "offset": 0,
+          "transform": "rotate(0deg)",
+          "easing": "linear"
+        },
+        {
+          "offset": 0.08,
+          "transform": "rotate(0deg)",
+          "easing": "standard"
+        },
+        {
+          "offset": 0.16,
+          "transform": "rotate(15deg)",
+          "easing": "soft"
+        },
+        {
+          "offset": 0.26,
+          "transform": "rotate(15deg)",
+          "easing": "standard"
+        },
+        {
+          "offset": 0.34,
+          "transform": "rotate(30deg)",
+          "easing": "soft"
+        },
+        {
+          "offset": 0.48,
+          "transform": "rotate(30deg)",
+          "easing": "standard"
+        },
+        {
+          "offset": 0.62,
+          "transform": "rotate(0deg)",
+          "easing": "soft"
+        },
+        {
+          "offset": 1,
+          "transform": "rotate(0deg)"
+        }
+      ],
+      "options": {
+        "duration": 2600,
+        "easing": "linear",
+        "fill": "both"
+      }
+    }
+  ],
+  "hover": [
+    {
+      "target": "hands",
+      "at": 0,
+      "keyframes": [
+        {
+          "offset": 0,
+          "transform": "rotate(0deg)",
+          "easing": "soft"
+        },
+        {
+          "offset": 0.5,
+          "transform": "rotate(15deg)",
+          "easing": "soft"
+        },
+        {
+          "offset": 1,
+          "transform": "rotate(0deg)"
+        }
+      ],
+      "options": {
+        "duration": 700,
+        "easing": "linear",
+        "fill": "both"
+      }
+    }
+  ]
+}

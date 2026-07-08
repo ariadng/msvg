@@ -1,0 +1,81 @@
+{
+  "intro": [
+    {
+      "target": "glyph",
+      "at": 0,
+      "keyframes": [
+        {
+          "opacity": 0,
+          "transform": "scale(0.94)"
+        },
+        {
+          "opacity": 1,
+          "transform": "scale(1)"
+        }
+      ],
+      "options": {
+        "duration": 440,
+        "easing": "linear",
+        "fill": "both"
+      }
+    }
+  ],
+  "loadingLoop": [
+    {
+      "target": "glyph",
+      "at": 0,
+      "keyframes": [
+        {
+          "offset": 0,
+          "transform": "scale(1)",
+          "opacity": 1,
+          "easing": "soft"
+        },
+        {
+          "offset": 0.09,
+          "transform": "scale(1.03)",
+          "opacity": 0.92,
+          "easing": "soft"
+        },
+        {
+          "offset": 0.22,
+          "transform": "scale(1)",
+          "opacity": 1,
+          "easing": "linear"
+        },
+        {
+          "offset": 1,
+          "transform": "scale(1)",
+          "opacity": 1
+        }
+      ],
+      "options": {
+        "duration": 2600,
+        "easing": "linear",
+        "fill": "both"
+      }
+    }
+  ],
+  "hover": [
+    {
+      "target": "glyph",
+      "at": 0,
+      "keyframes": [
+        {
+          "transform": "scale(1)"
+        },
+        {
+          "transform": "scale(1.03)"
+        },
+        {
+          "transform": "scale(1)"
+        }
+      ],
+      "options": {
+        "duration": 480,
+        "easing": "linear",
+        "fill": "both"
+      }
+    }
+  ]
+}

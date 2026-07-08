@@ -1,0 +1,6 @@
+{
+  "root": "[data-animation='event']",
+  "glyph": "[data-part='glyph']",
+  "calendar": "[data-part='calendar']",
+  "dateBlock": "[data-part='dateBlock']"
+}

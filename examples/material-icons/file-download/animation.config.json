@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0",
+  "id": "file-download",
+  "name": "File download",
+  "version": "0.1.0",
+  "description": "Animated download whose arrow descends into the tray and re-enters at the top each loop.",
+  "asset": {
+    "svg": "./assets/main.svg"
+  },
+  "motion": {
+    "targets": "./motion/targets.json",
+    "timelines": "./motion/timelines.json",
+    "states": "./motion/states.json"
+  },
+  "accessibility": {
+    "title": "File download",
+    "description": "A download arrow that slides down into the tray, fades out, and reappears at the top \u2014 a repeating download.",
+    "decorative": false
+  },
+  "reducedMotion": {
+    "strategy": "static",
+    "fallbackState": "idle"
+  }
+}

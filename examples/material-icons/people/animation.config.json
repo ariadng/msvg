@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0",
+  "id": "people",
+  "name": "People",
+  "version": "0.1.0",
+  "description": "Two figures that lean toward each other in a small nod of connection.",
+  "asset": {
+    "svg": "./assets/main.svg"
+  },
+  "motion": {
+    "targets": "./motion/targets.json",
+    "timelines": "./motion/timelines.json",
+    "states": "./motion/states.json"
+  },
+  "accessibility": {
+    "title": "People",
+    "description": "Two figures that lean toward one another and back, a nod of connection.",
+    "decorative": false
+  },
+  "reducedMotion": {
+    "strategy": "static",
+    "fallbackState": "idle"
+  }
+}

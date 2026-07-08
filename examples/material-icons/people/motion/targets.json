@@ -1,0 +1,6 @@
+{
+  "root": "[data-animation='people']",
+  "glyph": "[data-part='glyph']",
+  "personRight": "[data-part='personRight']",
+  "personLeft": "[data-part='personLeft']"
+}

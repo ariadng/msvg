@@ -1,0 +1,6 @@
+{
+  "root": "[data-animation='file-download']",
+  "glyph": "[data-part='glyph']",
+  "tray": "[data-part='tray']",
+  "arrow": "[data-part='arrow']"
+}

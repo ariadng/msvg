@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0",
+  "id": "account-circle",
+  "name": "Account Circle",
+  "version": "0.1.0",
+  "description": "Animated account icon: a calm signed-in presence pulse.",
+  "asset": {
+    "svg": "./assets/main.svg"
+  },
+  "motion": {
+    "targets": "./motion/targets.json",
+    "timelines": "./motion/timelines.json",
+    "states": "./motion/states.json"
+  },
+  "accessibility": {
+    "title": "Account",
+    "description": "A person-in-circle avatar that softly breathes to signal a signed-in presence.",
+    "decorative": false
+  },
+  "reducedMotion": {
+    "strategy": "static",
+    "fallbackState": "idle"
+  }
+}

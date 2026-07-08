@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0",
+  "id": "play-arrow",
+  "name": "Play",
+  "version": "0.1.0",
+  "description": "Animated play button with a press-and-release gesture each loop.",
+  "asset": {
+    "svg": "./assets/main.svg"
+  },
+  "motion": {
+    "targets": "./motion/targets.json",
+    "timelines": "./motion/timelines.json",
+    "states": "./motion/states.json"
+  },
+  "accessibility": {
+    "title": "Play",
+    "description": "A play triangle that presses down and springs back with a soft overshoot \u2014 ready to play.",
+    "decorative": false
+  },
+  "reducedMotion": {
+    "strategy": "static",
+    "fallbackState": "idle"
+  }
+}

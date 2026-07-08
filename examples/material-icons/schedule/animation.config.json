@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0",
+  "id": "schedule",
+  "name": "Schedule",
+  "version": "0.1.0",
+  "description": "Animated schedule clock whose hands tick forward and sweep back each loop.",
+  "asset": {
+    "svg": "./assets/main.svg"
+  },
+  "motion": {
+    "targets": "./motion/targets.json",
+    "timelines": "./motion/timelines.json",
+    "states": "./motion/states.json"
+  },
+  "accessibility": {
+    "title": "Schedule",
+    "description": "A clock whose hands tick forward two steps then sweep back, marking time passing.",
+    "decorative": false
+  },
+  "reducedMotion": {
+    "strategy": "static",
+    "fallbackState": "idle"
+  }
+}

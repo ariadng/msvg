@@ -1,0 +1,6 @@
+{
+  "root": "[data-animation='content-copy']",
+  "glyph": "[data-part='glyph']",
+  "sheetBack": "[data-part='sheetBack']",
+  "sheetFront": "[data-part='sheetFront']"
+}

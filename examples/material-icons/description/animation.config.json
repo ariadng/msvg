@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0",
+  "id": "description",
+  "name": "Description",
+  "version": "0.1.0",
+  "description": "Animated document: text lines fill in top to bottom.",
+  "asset": {
+    "svg": "./assets/main.svg"
+  },
+  "motion": {
+    "targets": "./motion/targets.json",
+    "timelines": "./motion/timelines.json",
+    "states": "./motion/states.json"
+  },
+  "accessibility": {
+    "title": "Document",
+    "description": "A page whose text lines pulse in sequence from top to bottom, as if content is loading.",
+    "decorative": false
+  },
+  "reducedMotion": {
+    "strategy": "static",
+    "fallbackState": "idle"
+  }
+}

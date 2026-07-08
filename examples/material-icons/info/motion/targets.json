@@ -1,0 +1,6 @@
+{
+  "root": "[data-animation='info']",
+  "glyph": "[data-part='glyph']",
+  "body": "[data-part='body']",
+  "dot": "[data-part='dot']"
+}

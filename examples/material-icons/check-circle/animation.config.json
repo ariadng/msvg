@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0",
+  "id": "check-circle",
+  "name": "Check Circle",
+  "version": "0.1.0",
+  "description": "Animated success icon: one verified beat.",
+  "asset": {
+    "svg": "./assets/main.svg"
+  },
+  "motion": {
+    "targets": "./motion/targets.json",
+    "timelines": "./motion/timelines.json",
+    "states": "./motion/states.json"
+  },
+  "accessibility": {
+    "title": "Success",
+    "description": "A check-in-circle that gives one confident verified beat to confirm success.",
+    "decorative": false
+  },
+  "reducedMotion": {
+    "strategy": "static",
+    "fallbackState": "idle"
+  }
+}

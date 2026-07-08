@@ -1,0 +1,104 @@
+{
+  "intro": [
+    {
+      "target": "glyph",
+      "at": 0,
+      "keyframes": [
+        {
+          "offset": 0,
+          "transform": "scale(0.9)",
+          "opacity": 0
+        },
+        {
+          "offset": 1,
+          "transform": "scale(1)",
+          "opacity": 1
+        }
+      ],
+      "options": {
+        "duration": 440,
+        "easing": "emphasized",
+        "fill": "both"
+      }
+    }
+  ],
+  "loadingLoop": [
+    {
+      "target": "glyph",
+      "at": 0,
+      "keyframes": [
+        {
+          "offset": 0,
+          "transform": "scale(1)",
+          "easing": "linear"
+        },
+        {
+          "offset": 0.12,
+          "transform": "scale(1)",
+          "easing": "standard"
+        },
+        {
+          "offset": 0.2,
+          "transform": "scale(0.94)",
+          "easing": "standard"
+        },
+        {
+          "offset": 0.28,
+          "transform": "scale(0.94)",
+          "easing": "linear"
+        },
+        {
+          "offset": 0.36,
+          "transform": "scale(1.03)",
+          "easing": "soft"
+        },
+        {
+          "offset": 0.48,
+          "transform": "scale(1)",
+          "easing": "soft"
+        },
+        {
+          "offset": 1,
+          "transform": "scale(1)"
+        }
+      ],
+      "options": {
+        "duration": 2000,
+        "easing": "linear",
+        "fill": "both"
+      }
+    }
+  ],
+  "hover": [
+    {
+      "target": "glyph",
+      "at": 0,
+      "keyframes": [
+        {
+          "offset": 0,
+          "transform": "scale(1)",
+          "easing": "standard"
+        },
+        {
+          "offset": 0.3,
+          "transform": "scale(0.94)",
+          "easing": "linear"
+        },
+        {
+          "offset": 0.6,
+          "transform": "scale(1.03)",
+          "easing": "soft"
+        },
+        {
+          "offset": 1,
+          "transform": "scale(1)"
+        }
+      ],
+      "options": {
+        "duration": 520,
+        "easing": "linear",
+        "fill": "both"
+      }
+    }
+  ]
+}

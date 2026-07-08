@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0",
+  "id": "send",
+  "name": "Send",
+  "version": "0.1.0",
+  "description": "A paper plane that winds back then darts forward to send a message away.",
+  "asset": {
+    "svg": "./assets/main.svg"
+  },
+  "motion": {
+    "targets": "./motion/targets.json",
+    "timelines": "./motion/timelines.json",
+    "states": "./motion/states.json"
+  },
+  "accessibility": {
+    "title": "Send",
+    "description": "A paper plane that pulls back then darts forward and glides home.",
+    "decorative": false
+  },
+  "reducedMotion": {
+    "strategy": "static",
+    "fallbackState": "idle"
+  }
+}

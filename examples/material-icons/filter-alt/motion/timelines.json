@@ -1,0 +1,98 @@
+{
+  "intro": [
+    {
+      "target": "glyph",
+      "at": 0,
+      "keyframes": [
+        {
+          "opacity": 0,
+          "transform": "translateY(-10px) scale(0.94)"
+        },
+        {
+          "opacity": 1,
+          "transform": "translateY(0px) scale(1)"
+        }
+      ],
+      "options": {
+        "duration": 420,
+        "easing": "standard",
+        "fill": "both"
+      }
+    }
+  ],
+  "loadingLoop": [
+    {
+      "target": "glyph",
+      "at": 0,
+      "keyframes": [
+        {
+          "offset": 0,
+          "transform": "rotate(0deg)",
+          "opacity": "1",
+          "easing": "linear"
+        },
+        {
+          "offset": 0.06,
+          "transform": "rotate(4deg)",
+          "easing": "soft"
+        },
+        {
+          "offset": 0.14,
+          "transform": "rotate(-4deg)",
+          "easing": "soft"
+        },
+        {
+          "offset": 0.22,
+          "transform": "rotate(4deg)",
+          "easing": "soft"
+        },
+        {
+          "offset": 0.3,
+          "transform": "rotate(-4deg)",
+          "easing": "soft"
+        },
+        {
+          "offset": 0.38,
+          "transform": "rotate(0deg)",
+          "easing": "soft"
+        },
+        {
+          "offset": 1,
+          "transform": "rotate(0deg)"
+        }
+      ],
+      "options": {
+        "duration": 2200,
+        "easing": "linear",
+        "fill": "both"
+      }
+    }
+  ],
+  "hover": [
+    {
+      "target": "glyph",
+      "at": 0,
+      "keyframes": [
+        {
+          "offset": 0,
+          "transform": "rotate(0deg)",
+          "easing": "soft"
+        },
+        {
+          "offset": 0.5,
+          "transform": "rotate(4deg)",
+          "easing": "soft"
+        },
+        {
+          "offset": 1,
+          "transform": "rotate(0deg)"
+        }
+      ],
+      "options": {
+        "duration": 360,
+        "easing": "linear",
+        "fill": "both"
+      }
+    }
+  ]
+}

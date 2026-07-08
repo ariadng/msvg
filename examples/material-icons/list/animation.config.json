@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0",
+  "id": "list",
+  "name": "List",
+  "version": "0.1.0",
+  "description": "List rows that pulse top to bottom, as if items are loading in.",
+  "asset": {
+    "svg": "./assets/main.svg"
+  },
+  "motion": {
+    "targets": "./motion/targets.json",
+    "timelines": "./motion/timelines.json",
+    "states": "./motion/states.json"
+  },
+  "accessibility": {
+    "title": "List",
+    "description": "Three list rows that pulse from top to bottom, like items loading in sequence.",
+    "decorative": false
+  },
+  "reducedMotion": {
+    "strategy": "static",
+    "fallbackState": "idle"
+  }
+}

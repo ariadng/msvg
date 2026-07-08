@@ -1,0 +1,6 @@
+{
+  "root": "[data-animation='groups']",
+  "glyph": "[data-part='glyph']",
+  "crowd": "[data-part='crowd']",
+  "centerFigure": "[data-part='centerFigure']"
+}

@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0",
+  "id": "logout",
+  "name": "Logout",
+  "version": "0.1.0",
+  "description": "Animated logout: the arrow nudges out through the door.",
+  "asset": {
+    "svg": "./assets/main.svg"
+  },
+  "motion": {
+    "targets": "./motion/targets.json",
+    "timelines": "./motion/timelines.json",
+    "states": "./motion/states.json"
+  },
+  "accessibility": {
+    "title": "Log out",
+    "description": "A door with an arrow that nudges rightward out of the frame to signal signing out.",
+    "decorative": false
+  },
+  "reducedMotion": {
+    "strategy": "static",
+    "fallbackState": "idle"
+  }
+}

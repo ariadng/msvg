@@ -1,0 +1,4 @@
+{
+  "root": "[data-animation='fingerprint']",
+  "glyph": "[data-part='glyph']"
+}

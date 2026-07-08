@@ -1,0 +1,114 @@
+{
+  "intro": [
+    {
+      "target": "glyph",
+      "at": 0,
+      "keyframes": [
+        {
+          "offset": 0,
+          "transform": "scale(0.9)",
+          "opacity": 0
+        },
+        {
+          "offset": 1,
+          "transform": "scale(1)",
+          "opacity": 1
+        }
+      ],
+      "options": {
+        "duration": 400,
+        "easing": "soft",
+        "fill": "both"
+      }
+    }
+  ],
+  "loadingLoop": [
+    {
+      "target": "glyph",
+      "at": 0,
+      "keyframes": [
+        {
+          "offset": 0,
+          "transform": "rotate(0deg)",
+          "easing": "linear"
+        },
+        {
+          "offset": 0.04,
+          "transform": "rotate(0deg)",
+          "easing": "standard"
+        },
+        {
+          "offset": 0.08,
+          "transform": "rotate(4deg)",
+          "easing": "soft"
+        },
+        {
+          "offset": 0.12,
+          "transform": "rotate(-4deg)",
+          "easing": "soft"
+        },
+        {
+          "offset": 0.16,
+          "transform": "rotate(4deg)",
+          "easing": "soft"
+        },
+        {
+          "offset": 0.2,
+          "transform": "rotate(-4deg)",
+          "easing": "soft"
+        },
+        {
+          "offset": 0.26,
+          "transform": "rotate(0deg)",
+          "easing": "soft"
+        },
+        {
+          "offset": 1,
+          "transform": "rotate(0deg)"
+        }
+      ],
+      "options": {
+        "duration": 2600,
+        "easing": "linear",
+        "fill": "both"
+      }
+    }
+  ],
+  "hover": [
+    {
+      "target": "glyph",
+      "at": 0,
+      "keyframes": [
+        {
+          "offset": 0,
+          "transform": "rotate(0deg)",
+          "easing": "soft"
+        },
+        {
+          "offset": 0.25,
+          "transform": "rotate(4deg)",
+          "easing": "soft"
+        },
+        {
+          "offset": 0.5,
+          "transform": "rotate(-4deg)",
+          "easing": "soft"
+        },
+        {
+          "offset": 0.75,
+          "transform": "rotate(3deg)",
+          "easing": "soft"
+        },
+        {
+          "offset": 1,
+          "transform": "rotate(0deg)"
+        }
+      ],
+      "options": {
+        "duration": 640,
+        "easing": "linear",
+        "fill": "both"
+      }
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "intro": [
+    {
+      "target": "glyph",
+      "at": 0,
+      "keyframes": [
+        {
+          "opacity": 0,
+          "transform": "scale(0.94)"
+        },
+        {
+          "opacity": 1,
+          "transform": "scale(1)"
+        }
+      ],
+      "options": {
+        "duration": 420,
+        "easing": "linear",
+        "fill": "both"
+      }
+    }
+  ],
+  "loadingLoop": [
+    {
+      "target": "textTop",
+      "at": 0,
+      "keyframes": [
+        {
+          "offset": 0,
+          "transform": "scale(1)",
+          "easing": "linear"
+        },
+        {
+          "offset": 0.08,
+          "transform": "scale(1)",
+          "easing": "soft"
+        },
+        {
+          "offset": 0.15,
+          "transform": "scale(1.12)",
+          "easing": "soft"
+        },
+        {
+          "offset": 0.25,
+          "transform": "scale(1)",
+          "easing": "standard"
+        },
+        {
+          "offset": 1,
+          "transform": "scale(1)"
+        }
+      ],
+      "options": {
+        "duration": 2600,
+        "easing": "linear",
+        "fill": "both"
+      }
+    },
+    {
+      "target": "textBottom",
+      "at": 0,
+      "keyframes": [
+        {
+          "offset": 0,
+          "transform": "scale(1)",
+          "easing": "linear"
+        },
+        {
+          "offset": 0.16,
+          "transform": "scale(1)",
+          "easing": "soft"
+        },
+        {
+          "offset": 0.23,
+          "transform": "scale(1.12)",
+          "easing": "soft"
+        },
+        {
+          "offset": 0.33,
+          "transform": "scale(1)",
+          "easing": "standard"
+        },
+        {
+          "offset": 1,
+          "transform": "scale(1)"
+        }
+      ],
+      "options": {
+        "duration": 2600,
+        "easing": "linear",
+        "fill": "both"
+      }
+    }
+  ],
+  "hover": [
+    {
+      "target": "textTop",
+      "at": 0,
+      "keyframes": [
+        {
+          "transform": "scale(1)"
+        },
+        {
+          "transform": "scale(1.12)",
+          "offset": 0.4,
+          "easing": "soft"
+        },
+        {
+          "transform": "scale(1)"
+        }
+      ],
+      "options": {
+        "duration": 460,
+        "easing": "linear",
+        "fill": "both"
+      }
+    },
+    {
+      "target": "textBottom",
+      "at": 0,
+      "keyframes": [
+        {
+          "transform": "scale(1)"
+        },
+        {
+          "transform": "scale(1.12)",
+          "offset": 0.5,
+          "easing": "soft"
+        },
+        {
+          "transform": "scale(1)"
+        }
+      ],
+      "options": {
+        "duration": 520,
+        "easing": "linear",
+        "fill": "both"
+      }
+    }
+  ]
+}

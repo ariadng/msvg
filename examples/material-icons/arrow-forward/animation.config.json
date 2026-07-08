@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0",
+  "id": "arrow-forward",
+  "name": "Arrow Forward",
+  "version": "0.1.0",
+  "description": "A forward arrow that beckons onward with a soft rightward nudge.",
+  "asset": {
+    "svg": "./assets/main.svg"
+  },
+  "motion": {
+    "targets": "./motion/targets.json",
+    "timelines": "./motion/timelines.json",
+    "states": "./motion/states.json"
+  },
+  "accessibility": {
+    "title": "Forward",
+    "description": "A rightward arrow that slides forward and eases back, beckoning onward.",
+    "decorative": false
+  },
+  "reducedMotion": {
+    "strategy": "static",
+    "fallbackState": "idle"
+  }
+}

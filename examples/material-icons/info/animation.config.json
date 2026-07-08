@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0",
+  "id": "info",
+  "name": "Info",
+  "version": "0.1.0",
+  "description": "Animated info icon: the i-dot pops to say \u201cinformation here.\u201d",
+  "asset": {
+    "svg": "./assets/main.svg"
+  },
+  "motion": {
+    "targets": "./motion/targets.json",
+    "timelines": "./motion/timelines.json",
+    "states": "./motion/states.json"
+  },
+  "accessibility": {
+    "title": "Information",
+    "description": "An information glyph whose dot pops to draw the eye while the body stays calm.",
+    "decorative": false
+  },
+  "reducedMotion": {
+    "strategy": "static",
+    "fallbackState": "idle"
+  }
+}

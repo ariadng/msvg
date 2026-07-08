@@ -1,0 +1,4 @@
+{
+  "root": "[data-animation='play-arrow']",
+  "glyph": "[data-part='glyph']"
+}

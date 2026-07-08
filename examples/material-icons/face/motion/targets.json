@@ -1,0 +1,7 @@
+{
+  "root": "[data-animation='face']",
+  "glyph": "[data-part='glyph']",
+  "faceBody": "[data-part='faceBody']",
+  "eyeLeft": "[data-part='eyeLeft']",
+  "eyeRight": "[data-part='eyeRight']"
+}

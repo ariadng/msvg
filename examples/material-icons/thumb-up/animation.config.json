@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0",
+  "id": "thumb-up",
+  "name": "Thumb Up",
+  "version": "0.1.0",
+  "description": "Animated thumbs-up that dips and springs into a confident like.",
+  "asset": {
+    "svg": "./assets/main.svg"
+  },
+  "motion": {
+    "targets": "./motion/targets.json",
+    "timelines": "./motion/timelines.json",
+    "states": "./motion/states.json"
+  },
+  "accessibility": {
+    "title": "Thumb up",
+    "description": "A thumbs-up that presses down and springs back with a small pop, as if liking.",
+    "decorative": false
+  },
+  "reducedMotion": {
+    "strategy": "static",
+    "fallbackState": "idle"
+  }
+}

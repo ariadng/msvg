@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0",
+  "id": "edit",
+  "name": "Edit",
+  "version": "0.1.0",
+  "description": "Animated pencil: three small scribble strokes.",
+  "asset": {
+    "svg": "./assets/main.svg"
+  },
+  "motion": {
+    "targets": "./motion/targets.json",
+    "timelines": "./motion/timelines.json",
+    "states": "./motion/states.json"
+  },
+  "accessibility": {
+    "title": "Edit",
+    "description": "A pencil that scribbles with three short diagonal strokes to signal writing.",
+    "decorative": false
+  },
+  "reducedMotion": {
+    "strategy": "static",
+    "fallbackState": "idle"
+  }
+}

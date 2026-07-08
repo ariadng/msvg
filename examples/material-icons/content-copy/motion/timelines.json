@@ -1,0 +1,87 @@
+{
+  "intro": [
+    {
+      "target": "glyph",
+      "at": 0,
+      "keyframes": [
+        {
+          "opacity": 0,
+          "transform": "translateY(-10px) scale(0.94)"
+        },
+        {
+          "opacity": 1,
+          "transform": "translateY(0px) scale(1)"
+        }
+      ],
+      "options": {
+        "duration": 420,
+        "easing": "standard",
+        "fill": "both"
+      }
+    }
+  ],
+  "loadingLoop": [
+    {
+      "target": "sheetFront",
+      "at": 0,
+      "keyframes": [
+        {
+          "offset": 0,
+          "transform": "translate(0px,0px)",
+          "easing": "linear"
+        },
+        {
+          "offset": 0.08,
+          "transform": "translate(0px,0px)",
+          "easing": "standard"
+        },
+        {
+          "offset": 0.22,
+          "transform": "translate(24px,-24px)",
+          "easing": "soft"
+        },
+        {
+          "offset": 0.36,
+          "transform": "translate(0px,0px)",
+          "easing": "soft"
+        },
+        {
+          "offset": 1,
+          "transform": "translate(0px,0px)"
+        }
+      ],
+      "options": {
+        "duration": 2200,
+        "easing": "linear",
+        "fill": "both"
+      }
+    }
+  ],
+  "hover": [
+    {
+      "target": "sheetFront",
+      "at": 0,
+      "keyframes": [
+        {
+          "offset": 0,
+          "transform": "translate(0px,0px)",
+          "easing": "soft"
+        },
+        {
+          "offset": 0.5,
+          "transform": "translate(18px,-18px)",
+          "easing": "soft"
+        },
+        {
+          "offset": 1,
+          "transform": "translate(0px,0px)"
+        }
+      ],
+      "options": {
+        "duration": 360,
+        "easing": "linear",
+        "fill": "both"
+      }
+    }
+  ]
+}
