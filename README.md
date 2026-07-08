@@ -45,6 +45,19 @@ See [examples/inventory-agent](./examples/inventory-agent) for a complete animat
 - [Agent guide](./docs/agent-guide.md) — the editing workflow and rules for AI agents.
 - [Package format](./docs/package-format.md) — every file in an animation package.
 
+## Claude Code plugin
+
+Author msvg animations from inside [Claude Code](https://claude.com/claude-code):
+
+```text
+/plugin marketplace add ariadng/msvg
+/plugin install msvg@msvg
+```
+
+Adds four skills — `/msvg:create` (scaffold a package), `/msvg:animate` (design meaningful
+motion), `/msvg:validate` (run the CLI), `/msvg:preview` (live gallery) — plus the
+`msvg:msvg-animator` agent. See [plugin/README.md](./plugin/README.md).
+
 ## Development
 
 ```bash

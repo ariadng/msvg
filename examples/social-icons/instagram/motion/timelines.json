@@ -6,7 +6,8 @@
       "keyframes": [
         {
           "opacity": 0,
-          "transform": "scale(0.84) rotate(-6deg)"
+          "transform": "scale(0.84) rotate(-6deg)",
+          "easing": "emphasized"
         },
         {
           "opacity": 1,
@@ -21,7 +22,7 @@
       ],
       "options": {
         "duration": 480,
-        "easing": "emphasized",
+        "easing": "linear",
         "fill": "both"
       }
     }

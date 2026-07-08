@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "msvg",
+  "owner": {
+    "name": "ariadng",
+    "email": "ariadng@gmail.com"
+  },
+  "description": "MotionSVG tooling for Claude Code — create, animate, validate, and preview schema-first SVG animation packages.",
+  "plugins": [
+    {
+      "name": "msvg",
+      "source": "./plugin",
+      "description": "Author, validate, and preview MotionSVG (msvg) animation packages: scaffold valid packages, apply the house animation rules (linear clip easing, seamless loops, bounds discipline), run the validator, and serve a live gallery. Ships the msvg-animator agent plus /msvg:create, /msvg:animate, /msvg:validate, and /msvg:preview skills.",
+      "version": "0.1.0",
+      "author": {
+        "name": "ariadng",
+        "email": "ariadng@gmail.com"
+      },
+      "homepage": "https://github.com/ariadng/msvg#readme",
+      "repository": "https://github.com/ariadng/msvg",
+      "license": "MIT",
+      "category": "development",
+      "keywords": [
+        "svg",
+        "animation",
+        "motionsvg",
+        "msvg",
+        "icons"
+      ],
+      "tags": [
+        "svg",
+        "animation",
+        "icons",
+        "waapi",
+        "authoring"
+      ]
+    }
+  ]
+}
