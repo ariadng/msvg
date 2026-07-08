@@ -13,28 +13,52 @@
   ],
   "loadingLoop": [
     {
-      "target": "glyph",
+      "target": "bubbleBig",
       "at": 0,
       "keyframes": [
-        { "transform": "translateY(0px)", "offset": 0, "easing": "soft" },
-        { "transform": "translateY(-1.6px)", "offset": 0.25, "easing": "soft" },
-        { "transform": "translateY(0px)", "offset": 0.5, "easing": "soft" },
-        { "transform": "translateY(1.2px)", "offset": 0.75, "easing": "soft" },
-        { "transform": "translateY(0px)", "offset": 1 }
+        { "transform": "scale(1)", "offset": 0, "easing": "soft" },
+        { "transform": "scale(1.08)", "offset": 0.12, "easing": "soft" },
+        { "transform": "scale(1)", "offset": 0.24, "easing": "linear" },
+        { "transform": "scale(1)", "offset": 1 }
       ],
-      "options": { "duration": 2200, "easing": "soft", "fill": "both" }
+      "options": { "duration": 2600, "easing": "linear", "fill": "both" }
+    },
+    {
+      "target": "bubbleSmall",
+      "at": 0,
+      "keyframes": [
+        { "transform": "scale(1)", "offset": 0, "easing": "linear" },
+        { "transform": "scale(1)", "offset": 0.38, "easing": "soft" },
+        { "transform": "scale(1.12)", "offset": 0.5, "easing": "soft" },
+        { "transform": "scale(1)", "offset": 0.62, "easing": "linear" },
+        { "transform": "scale(1)", "offset": 1 }
+      ],
+      "options": { "duration": 2600, "easing": "linear", "fill": "both" }
     }
   ],
   "hover": [
     {
-      "target": "glyph",
+      "target": "bubbleBig",
       "at": 0,
       "keyframes": [
-        { "transform": "translateY(0px)" },
-        { "transform": "translateY(-2px)", "offset": 0.5 },
-        { "transform": "translateY(0px)" }
+        { "transform": "scale(1)", "offset": 0, "easing": "soft" },
+        { "transform": "scale(1.08)", "offset": 0.2, "easing": "soft" },
+        { "transform": "scale(1)", "offset": 0.4, "easing": "linear" },
+        { "transform": "scale(1)", "offset": 1 }
       ],
-      "options": { "duration": 520, "easing": "soft", "fill": "both" }
+      "options": { "duration": 900, "easing": "linear", "fill": "both" }
+    },
+    {
+      "target": "bubbleSmall",
+      "at": 0,
+      "keyframes": [
+        { "transform": "scale(1)", "offset": 0, "easing": "linear" },
+        { "transform": "scale(1)", "offset": 0.45, "easing": "soft" },
+        { "transform": "scale(1.12)", "offset": 0.65, "easing": "soft" },
+        { "transform": "scale(1)", "offset": 0.85, "easing": "linear" },
+        { "transform": "scale(1)", "offset": 1 }
+      ],
+      "options": { "duration": 900, "easing": "linear", "fill": "both" }
     }
   ]
 }

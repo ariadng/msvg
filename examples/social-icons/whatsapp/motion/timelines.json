@@ -16,15 +16,19 @@
       "target": "glyph",
       "at": 0,
       "keyframes": [
-        { "transform": "rotate(0deg)", "offset": 0, "easing": "standard" },
-        { "transform": "rotate(-8deg)", "offset": 0.07, "easing": "standard" },
-        { "transform": "rotate(8deg)", "offset": 0.15, "easing": "standard" },
-        { "transform": "rotate(-5deg)", "offset": 0.23, "easing": "standard" },
-        { "transform": "rotate(5deg)", "offset": 0.31, "easing": "standard" },
-        { "transform": "rotate(0deg)", "offset": 0.4, "easing": "soft" },
+        { "transform": "rotate(0deg)", "offset": 0, "easing": "linear" },
+        { "transform": "rotate(-5deg)", "offset": 0.025, "easing": "linear" },
+        { "transform": "rotate(5deg)", "offset": 0.05, "easing": "linear" },
+        { "transform": "rotate(-5deg)", "offset": 0.075, "easing": "linear" },
+        { "transform": "rotate(0deg)", "offset": 0.1, "easing": "linear" },
+        { "transform": "rotate(0deg)", "offset": 0.158, "easing": "linear" },
+        { "transform": "rotate(-5deg)", "offset": 0.183, "easing": "linear" },
+        { "transform": "rotate(5deg)", "offset": 0.208, "easing": "linear" },
+        { "transform": "rotate(-5deg)", "offset": 0.233, "easing": "linear" },
+        { "transform": "rotate(0deg)", "offset": 0.258, "easing": "linear" },
         { "transform": "rotate(0deg)", "offset": 1 }
       ],
-      "options": { "duration": 2200, "easing": "soft", "fill": "both" }
+      "options": { "duration": 2400, "easing": "linear", "fill": "both" }
     }
   ],
   "hover": [
@@ -32,12 +36,13 @@
       "target": "glyph",
       "at": 0,
       "keyframes": [
-        { "transform": "rotate(0deg)" },
-        { "transform": "rotate(-8deg)", "offset": 0.25, "easing": "standard" },
-        { "transform": "rotate(8deg)", "offset": 0.6, "easing": "standard" },
-        { "transform": "rotate(0deg)", "easing": "soft" }
+        { "transform": "rotate(0deg)", "offset": 0, "easing": "linear" },
+        { "transform": "rotate(-5deg)", "offset": 0.25, "easing": "linear" },
+        { "transform": "rotate(5deg)", "offset": 0.5, "easing": "linear" },
+        { "transform": "rotate(-5deg)", "offset": 0.75, "easing": "linear" },
+        { "transform": "rotate(0deg)", "offset": 1 }
       ],
-      "options": { "duration": 500, "easing": "soft", "fill": "both" }
+      "options": { "duration": 360, "easing": "linear", "fill": "both" }
     }
   ]
 }

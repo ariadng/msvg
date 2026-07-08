@@ -1,4 +1,6 @@
 {
   "root": "[data-animation='wechat']",
-  "glyph": "[data-part='glyph']"
+  "glyph": "[data-part='glyph']",
+  "bubbleBig": "[data-part='bubbleBig']",
+  "bubbleSmall": "[data-part='bubbleSmall']"
 }

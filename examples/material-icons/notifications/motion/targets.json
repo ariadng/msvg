@@ -1,4 +1,5 @@
 {
   "root": "[data-animation='notifications']",
-  "glyph": "[data-part='glyph']"
+  "glyph": "[data-part='glyph']",
+  "bell": "[data-part='bell']"
 }

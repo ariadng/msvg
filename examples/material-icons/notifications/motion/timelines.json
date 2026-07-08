@@ -13,33 +13,33 @@
 
   "loadingLoop": [
     {
-      "target": "glyph",
+      "target": "bell",
       "at": 0,
       "keyframes": [
-        { "offset": 0, "transform": "rotate(0deg)" },
-        { "offset": 0.12, "transform": "rotate(12deg)" },
-        { "offset": 0.3, "transform": "rotate(-9deg)" },
-        { "offset": 0.48, "transform": "rotate(6deg)" },
-        { "offset": 0.64, "transform": "rotate(-3deg)" },
-        { "offset": 0.8, "transform": "rotate(1.5deg)" },
-        { "offset": 1, "transform": "rotate(0deg)" }
+        { "offset": 0,    "transform": "rotate(0deg)",  "easing": "soft" },
+        { "offset": 0.10, "transform": "rotate(12deg)", "easing": "soft" },
+        { "offset": 0.22, "transform": "rotate(-9deg)", "easing": "soft" },
+        { "offset": 0.34, "transform": "rotate(5deg)",  "easing": "soft" },
+        { "offset": 0.44, "transform": "rotate(-2deg)", "easing": "soft" },
+        { "offset": 0.52, "transform": "rotate(0deg)",  "easing": "linear" },
+        { "offset": 1,    "transform": "rotate(0deg)" }
       ],
-      "options": { "duration": 2200, "easing": "soft", "fill": "both" }
+      "options": { "duration": 2400, "easing": "linear", "fill": "both" }
     }
   ],
 
   "hover": [
     {
-      "target": "glyph",
+      "target": "bell",
       "at": 0,
       "keyframes": [
-        { "transform": "rotate(0deg)" },
-        { "transform": "rotate(10deg)" },
-        { "transform": "rotate(-7deg)" },
-        { "transform": "rotate(4deg)" },
-        { "transform": "rotate(0deg)" }
+        { "offset": 0,    "transform": "rotate(0deg)",  "easing": "soft" },
+        { "offset": 0.22, "transform": "rotate(12deg)", "easing": "soft" },
+        { "offset": 0.48, "transform": "rotate(-8deg)", "easing": "soft" },
+        { "offset": 0.72, "transform": "rotate(4deg)",  "easing": "soft" },
+        { "offset": 1,    "transform": "rotate(0deg)" }
       ],
-      "options": { "duration": 520, "easing": "standard", "fill": "both" }
+      "options": { "duration": 640, "easing": "linear", "fill": "both" }
     }
   ]
 }

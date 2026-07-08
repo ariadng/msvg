@@ -1,4 +1,7 @@
 {
   "root": "[data-animation='instagram']",
-  "glyph": "[data-part='glyph']"
+  "glyph": "[data-part='glyph']",
+  "body": "[data-part='body']",
+  "lens": "[data-part='lens']",
+  "dot": "[data-part='dot']"
 }

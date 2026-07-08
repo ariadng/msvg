@@ -4,64 +4,46 @@
       "target": "glyph",
       "at": 0,
       "keyframes": [
-        {
-          "opacity": 0,
-          "transform": "translateY(40px) scale(0.96)"
-        },
-        {
-          "opacity": 1,
-          "transform": "translateY(0) scale(1)"
-        }
+        { "opacity": 0, "transform": "translateY(40px) scale(0.96)" },
+        { "opacity": 1, "transform": "translateY(0) scale(1)" }
       ],
-      "options": {
-        "duration": 450,
-        "easing": "soft",
-        "fill": "both"
-      }
+      "options": { "duration": 450, "easing": "soft", "fill": "both" }
     }
   ],
   "loadingLoop": [
     {
-      "target": "glyph",
+      "target": "head",
       "at": 0,
       "keyframes": [
-        {
-          "offset": 0,
-          "transform": "translateY(0) scale(1)"
-        },
-        {
-          "offset": 0.5,
-          "transform": "translateY(-28px) scale(1.06)"
-        },
-        {
-          "offset": 1,
-          "transform": "translateY(0) scale(1)"
-        }
+        { "offset": 0,    "transform": "rotate(0deg)", "easing": "standard" },
+        { "offset": 0.16, "transform": "rotate(8deg)", "easing": "soft" },
+        { "offset": 0.32, "transform": "rotate(0deg)", "easing": "linear" },
+        { "offset": 1,    "transform": "rotate(0deg)" }
       ],
-      "options": {
-        "duration": 2800,
-        "easing": "soft",
-        "fill": "both"
-      }
+      "options": { "duration": 2600, "easing": "linear", "fill": "both" }
+    },
+    {
+      "target": "torso",
+      "at": 0,
+      "keyframes": [
+        { "offset": 0,    "transform": "translateY(0)",     "easing": "soft" },
+        { "offset": 0.16, "transform": "translateY(-16px)", "easing": "soft" },
+        { "offset": 0.32, "transform": "translateY(0)",     "easing": "linear" },
+        { "offset": 1,    "transform": "translateY(0)" }
+      ],
+      "options": { "duration": 2600, "easing": "linear", "fill": "both" }
     }
   ],
   "hover": [
     {
-      "target": "glyph",
+      "target": "head",
       "at": 0,
       "keyframes": [
-        {
-          "transform": "scale(1)"
-        },
-        {
-          "transform": "scale(1.05)"
-        }
+        { "offset": 0,    "transform": "rotate(0deg)", "easing": "soft" },
+        { "offset": 0.50, "transform": "rotate(8deg)", "easing": "soft" },
+        { "offset": 1,    "transform": "rotate(0deg)" }
       ],
-      "options": {
-        "duration": 250,
-        "easing": "soft",
-        "fill": "both"
-      }
+      "options": { "duration": 360, "easing": "linear", "fill": "both" }
     }
   ]
 }

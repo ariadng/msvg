@@ -45,28 +45,27 @@
       "at": 0,
       "keyframes": [
         {
-          "transform": "translate(0px, -64px)",
-          "offset": 0
+          "transform": "translateX(0px) rotate(0deg)",
+          "offset": 0,
+          "easing": "cubic-bezier(.37, 0, .63, 1)"
         },
         {
-          "transform": "translate(64px, 0px)",
-          "offset": 0.25
+          "transform": "translateX(90px) rotate(6deg)",
+          "offset": 0.46,
+          "easing": "soft"
         },
         {
-          "transform": "translate(0px, 64px)",
-          "offset": 0.5
+          "transform": "translateX(0px) rotate(0deg)",
+          "offset": 0.6,
+          "easing": "linear"
         },
         {
-          "transform": "translate(-64px, 0px)",
-          "offset": 0.75
-        },
-        {
-          "transform": "translate(0px, -64px)",
+          "transform": "translateX(0px) rotate(0deg)",
           "offset": 1
         }
       ],
       "options": {
-        "duration": 2000,
+        "duration": 2400,
         "easing": "linear",
         "fill": "both"
       }

@@ -15,12 +15,13 @@
       "target": "glyph",
       "at": 0,
       "keyframes": [
-        { "transform": "rotate(0deg) scale(1)", "opacity": 1, "offset": 0 },
-        { "transform": "rotate(6deg) scale(1.06)", "opacity": 0.9, "offset": 0.3 },
-        { "transform": "rotate(-4deg) scale(1.03)", "opacity": 0.85, "offset": 0.6 },
-        { "transform": "rotate(0deg) scale(1)", "opacity": 1, "offset": 1 }
+        { "offset": 0,    "transform": "rotate(0deg) scale(1)",     "easing": "soft" },
+        { "offset": 0.32, "transform": "rotate(-8deg) scale(1)",    "easing": "emphasized" },
+        { "offset": 0.40, "transform": "rotate(12deg) scale(1.08)", "easing": "standard" },
+        { "offset": 0.48, "transform": "rotate(0deg) scale(1)",     "easing": "linear" },
+        { "offset": 1,    "transform": "rotate(0deg) scale(1)" }
       ],
-      "options": { "duration": 2000, "easing": "soft", "fill": "both" }
+      "options": { "duration": 2600, "easing": "linear", "fill": "both" }
     }
   ],
   "hover": [

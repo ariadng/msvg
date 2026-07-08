@@ -4,38 +4,205 @@
       "target": "glyph",
       "at": 0,
       "keyframes": [
-        { "opacity": 0, "transform": "scale(0.84) rotate(-6deg)" },
-        { "opacity": 1, "transform": "scale(1.03) rotate(1deg)", "offset": 0.72, "easing": "soft" },
-        { "opacity": 1, "transform": "scale(1) rotate(0deg)" }
+        {
+          "opacity": 0,
+          "transform": "scale(0.84) rotate(-6deg)"
+        },
+        {
+          "opacity": 1,
+          "transform": "scale(1.03) rotate(1deg)",
+          "offset": 0.72,
+          "easing": "soft"
+        },
+        {
+          "opacity": 1,
+          "transform": "scale(1) rotate(0deg)"
+        }
       ],
-      "options": { "duration": 480, "easing": "emphasized", "fill": "both" }
+      "options": {
+        "duration": 480,
+        "easing": "emphasized",
+        "fill": "both"
+      }
     }
   ],
   "loadingLoop": [
     {
-      "target": "glyph",
+      "target": "dot",
       "at": 0,
       "keyframes": [
-        { "transform": "rotate(0deg)", "opacity": 1, "offset": 0, "easing": "soft" },
-        { "transform": "rotate(-4deg)", "opacity": 1, "offset": 0.1, "easing": "soft" },
-        { "transform": "rotate(3deg)", "opacity": 0.45, "offset": 0.2, "easing": "standard" },
-        { "transform": "rotate(-1.5deg)", "opacity": 1, "offset": 0.32, "easing": "soft" },
-        { "transform": "rotate(0deg)", "opacity": 1, "offset": 0.44, "easing": "soft" },
-        { "transform": "rotate(0deg)", "opacity": 1, "offset": 1 }
+        {
+          "offset": 0,
+          "transform": "scale(1)",
+          "easing": "linear"
+        },
+        {
+          "offset": 0.05,
+          "transform": "scale(1)",
+          "easing": "emphasized"
+        },
+        {
+          "offset": 0.1,
+          "transform": "scale(2.3)",
+          "easing": "soft"
+        },
+        {
+          "offset": 0.2,
+          "transform": "scale(1.5)",
+          "easing": "soft"
+        },
+        {
+          "offset": 0.38,
+          "transform": "scale(1)",
+          "easing": "linear"
+        },
+        {
+          "offset": 1,
+          "transform": "scale(1)"
+        }
       ],
-      "options": { "duration": 2100, "easing": "soft", "fill": "both" }
+      "options": {
+        "duration": 2400,
+        "easing": "linear",
+        "fill": "both"
+      }
+    },
+    {
+      "target": "lens",
+      "at": 0,
+      "keyframes": [
+        {
+          "offset": 0,
+          "transform": "scale(1)",
+          "easing": "linear"
+        },
+        {
+          "offset": 0.12,
+          "transform": "scale(1)",
+          "easing": "standard"
+        },
+        {
+          "offset": 0.17,
+          "transform": "scale(0.68)",
+          "easing": "standard"
+        },
+        {
+          "offset": 0.23,
+          "transform": "scale(1.08)",
+          "easing": "soft"
+        },
+        {
+          "offset": 0.28,
+          "transform": "scale(1)",
+          "easing": "linear"
+        },
+        {
+          "offset": 1,
+          "transform": "scale(1)"
+        }
+      ],
+      "options": {
+        "duration": 2400,
+        "easing": "linear",
+        "fill": "both"
+      }
+    },
+    {
+      "target": "body",
+      "at": 0,
+      "keyframes": [
+        {
+          "offset": 0,
+          "transform": "scale(1)",
+          "easing": "linear"
+        },
+        {
+          "offset": 0.15,
+          "transform": "scale(1)",
+          "easing": "standard"
+        },
+        {
+          "offset": 0.19,
+          "transform": "scale(0.97)",
+          "easing": "soft"
+        },
+        {
+          "offset": 0.26,
+          "transform": "scale(1.012)",
+          "easing": "soft"
+        },
+        {
+          "offset": 0.32,
+          "transform": "scale(1)",
+          "easing": "linear"
+        },
+        {
+          "offset": 1,
+          "transform": "scale(1)"
+        }
+      ],
+      "options": {
+        "duration": 2400,
+        "easing": "linear",
+        "fill": "both"
+      }
     }
   ],
   "hover": [
     {
-      "target": "glyph",
+      "target": "dot",
       "at": 0,
       "keyframes": [
-        { "transform": "rotate(0deg)", "opacity": 1 },
-        { "transform": "rotate(3deg)", "opacity": 0.5, "offset": 0.4, "easing": "standard" },
-        { "transform": "rotate(0deg)", "opacity": 1, "easing": "soft" }
+        {
+          "offset": 0,
+          "transform": "scale(1)",
+          "easing": "emphasized"
+        },
+        {
+          "offset": 0.3,
+          "transform": "scale(2.1)",
+          "easing": "soft"
+        },
+        {
+          "offset": 1,
+          "transform": "scale(1)"
+        }
       ],
-      "options": { "duration": 420, "easing": "soft", "fill": "both" }
+      "options": {
+        "duration": 520,
+        "easing": "linear",
+        "fill": "both"
+      }
+    },
+    {
+      "target": "lens",
+      "at": 140,
+      "keyframes": [
+        {
+          "offset": 0,
+          "transform": "scale(1)",
+          "easing": "standard"
+        },
+        {
+          "offset": 0.35,
+          "transform": "scale(0.68)",
+          "easing": "soft"
+        },
+        {
+          "offset": 0.7,
+          "transform": "scale(1.08)",
+          "easing": "soft"
+        },
+        {
+          "offset": 1,
+          "transform": "scale(1)"
+        }
+      ],
+      "options": {
+        "duration": 420,
+        "easing": "linear",
+        "fill": "both"
+      }
     }
   ]
 }

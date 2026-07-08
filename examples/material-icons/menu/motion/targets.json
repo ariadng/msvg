@@ -1,4 +1,7 @@
 {
   "root": "[data-animation='menu']",
-  "glyph": "[data-part='glyph']"
+  "glyph": "[data-part='glyph']",
+  "barTop": "[data-part='barTop']",
+  "barMiddle": "[data-part='barMiddle']",
+  "barBottom": "[data-part='barBottom']"
 }

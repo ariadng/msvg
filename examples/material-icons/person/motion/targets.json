@@ -1,4 +1,6 @@
 {
   "root": "[data-animation='person']",
-  "glyph": "[data-part='glyph']"
+  "glyph": "[data-part='glyph']",
+  "torso": "[data-part='torso']",
+  "head": "[data-part='head']"
 }

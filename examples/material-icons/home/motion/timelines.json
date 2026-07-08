@@ -45,29 +45,38 @@
       "at": 0,
       "keyframes": [
         {
-          "transform": "translateY(0px)",
-          "offset": 0
+          "transform": "translateY(0px) scale(1)",
+          "offset": 0,
+          "easing": "standard"
         },
         {
-          "transform": "translateY(-72px)",
-          "offset": 0.3
+          "transform": "translateY(-50px) scale(1)",
+          "offset": 0.13,
+          "easing": "cubic-bezier(.4, 0, .7, 1)"
         },
         {
-          "transform": "translateY(-100px)",
-          "offset": 0.5
+          "transform": "translateY(0px) scale(1.02)",
+          "offset": 0.24,
+          "easing": "soft"
         },
         {
-          "transform": "translateY(-72px)",
-          "offset": 0.7
+          "transform": "translateY(0px) scale(0.99)",
+          "offset": 0.32,
+          "easing": "soft"
         },
         {
-          "transform": "translateY(0px)",
+          "transform": "translateY(0px) scale(1)",
+          "offset": 0.4,
+          "easing": "linear"
+        },
+        {
+          "transform": "translateY(0px) scale(1)",
           "offset": 1
         }
       ],
       "options": {
-        "duration": 2400,
-        "easing": "soft",
+        "duration": 2600,
+        "easing": "linear",
         "fill": "both"
       }
     }

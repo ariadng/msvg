@@ -1,4 +1,7 @@
 {
   "root": "[data-animation='shopping-cart']",
-  "glyph": "[data-part='glyph']"
+  "glyph": "[data-part='glyph']",
+  "basket": "[data-part='basket']",
+  "wheelBack": "[data-part='wheelBack']",
+  "wheelFront": "[data-part='wheelFront']"
 }
