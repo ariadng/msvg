@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0",
+  "id": "wechat",
+  "name": "WeChat",
+  "version": "0.1.0",
+  "description": "Animated WeChat logo with a soft rise-in entrance and a gentle chat-bubble float loop.",
+  "asset": { "svg": "./assets/main.svg" },
+  "motion": {
+    "targets": "./motion/targets.json",
+    "timelines": "./motion/timelines.json",
+    "states": "./motion/states.json"
+  },
+  "accessibility": {
+    "title": "WeChat",
+    "description": "The WeChat logo bobbing gently up and down like a floating chat bubble.",
+    "decorative": false
+  },
+  "reducedMotion": { "strategy": "static", "fallbackState": "idle" }
+}

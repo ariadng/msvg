@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0",
+  "id": "instagram",
+  "name": "Instagram",
+  "version": "0.1.0",
+  "description": "Animated Instagram logo with an entrance twist and a shutter-wink loop that wobbles and briefly dips opacity.",
+  "asset": { "svg": "./assets/main.svg" },
+  "motion": {
+    "targets": "./motion/targets.json",
+    "timelines": "./motion/timelines.json",
+    "states": "./motion/states.json"
+  },
+  "accessibility": {
+    "title": "Instagram",
+    "description": "The Instagram logo giving a camera-shutter wink with a small rotate wobble and a brief opacity dip.",
+    "decorative": false
+  },
+  "reducedMotion": { "strategy": "static", "fallbackState": "idle" }
+}

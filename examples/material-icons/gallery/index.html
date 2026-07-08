@@ -36,12 +36,20 @@
   header { padding: 2.5rem 0 1.5rem; }
   h1 { font-size: 1.25rem; font-weight: 650; margin: 0; letter-spacing: -0.01em; }
   header p { margin: 0.35rem 0 0; color: var(--muted); font-size: 0.9rem; }
-  #grid {
+  .grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
     gap: 0.75rem;
-    padding-bottom: 2rem;
   }
+  h2 {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--muted);
+    margin: 1.75rem 0 0.75rem;
+  }
+  section:last-of-type { padding-bottom: 2rem; }
   .tile {
     appearance: none;
     border: 1px solid var(--tile-border);
@@ -75,12 +83,13 @@
 <main>
   <header>
     <h1>msvg &times; Material Symbols</h1>
-    <p>12 icons animated as MotionSVG packages, looping through the state machine. Tap a tile to pause or resume its loop.</p>
+    <p>Icons animated as MotionSVG packages, looping through the state machine. Tap a tile to pause or resume its loop.</p>
   </header>
-  <div id="grid"></div>
+  <div id="sections"></div>
 </main>
 <footer>
   Icons: <a href="https://fonts.google.com/icons">Google Material Symbols</a> (Apache-2.0)
+  &middot; <a href="https://simpleicons.org">Simple Icons</a> (CC0; trademarks belong to their owners)
   &middot; Runtime: <a href="https://github.com/ariadng/msvg">msvg</a>
   &middot; honors reduced-motion
 </footer>
@@ -96,47 +105,57 @@
 <script type="module">
   import { createMsvg } from "msvg-core";
 
-  const grid = document.querySelector("#grid");
-  const icons = await fetch("/icons.json").then((r) => r.json());
+  const sectionsHost = document.querySelector("#sections");
+  const sections = await fetch("/sections.json").then((r) => r.json());
 
-  async function loadPackage(id) {
-    const base = `/icons/${id}`;
+  async function loadPackage(base, id) {
     const [config, targets, timelines, states, svgMarkup] = await Promise.all([
-      fetch(`${base}/animation.config.json`).then((r) => r.json()),
-      fetch(`${base}/motion/targets.json`).then((r) => r.json()),
-      fetch(`${base}/motion/timelines.json`).then((r) => r.json()),
-      fetch(`${base}/motion/states.json`).then((r) => r.json()),
-      fetch(`${base}/assets/main.svg`).then((r) => r.text()),
+      fetch(`${base}/${id}/animation.config.json`).then((r) => r.json()),
+      fetch(`${base}/${id}/motion/targets.json`).then((r) => r.json()),
+      fetch(`${base}/${id}/motion/timelines.json`).then((r) => r.json()),
+      fetch(`${base}/${id}/motion/states.json`).then((r) => r.json()),
+      fetch(`${base}/${id}/assets/main.svg`).then((r) => r.text()),
     ]);
     return { config, targets, timelines, states, svgMarkup };
   }
 
-  await Promise.all(icons.map(async (id) => {
-    const tile = document.createElement("button");
-    tile.className = "tile";
-    tile.setAttribute("aria-label", `${id} — tap to pause or resume`);
-    const slot = document.createElement("div");
-    slot.className = "slot";
-    const label = document.createElement("span");
-    label.className = "label";
-    label.textContent = id.replace(/-/g, " ");
-    tile.append(slot, label);
-    grid.append(tile);
+  for (const section of sections) {
+    const el = document.createElement("section");
+    const h2 = document.createElement("h2");
+    h2.textContent = section.title;
+    const grid = document.createElement("div");
+    grid.className = "grid";
+    el.append(h2, grid);
+    sectionsHost.append(el);
 
-    try {
-      const animation = await loadPackage(id);
-      const controller = createMsvg({ container: slot, animation });
-      controller.send("LOAD");
-      tile.addEventListener("click", () => {
-        const looping = controller.getState() === "loading";
-        controller.send(looping ? "RESET" : "LOAD");
-        tile.classList.toggle("paused", looping);
-      });
-    } catch (err) {
-      label.textContent = `${id}: failed to load`;
-      console.error(id, err);
+    for (const id of section.icons) {
+      const tile = document.createElement("button");
+      tile.className = "tile";
+      tile.setAttribute("aria-label", `${id} — tap to pause or resume`);
+      const slot = document.createElement("div");
+      slot.className = "slot";
+      const label = document.createElement("span");
+      label.className = "label";
+      label.textContent = id.replace(/-/g, " ");
+      tile.append(slot, label);
+      grid.append(tile);
+
+      loadPackage(section.base, id)
+        .then((animation) => {
+          const controller = createMsvg({ container: slot, animation });
+          controller.send("LOAD");
+          tile.addEventListener("click", () => {
+            const looping = controller.getState() === "loading";
+            controller.send(looping ? "RESET" : "LOAD");
+            tile.classList.toggle("paused", looping);
+          });
+        })
+        .catch((err) => {
+          label.textContent = `${id}: failed to load`;
+          console.error(id, err);
+        });
     }
-  }));
+  }
 </script>
 </body>
 </html>

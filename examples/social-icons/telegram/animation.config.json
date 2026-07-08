@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0",
+  "id": "telegram",
+  "name": "Telegram",
+  "version": "0.1.0",
+  "description": "Animated Telegram logo that flies in, then glides diagonally with a paper-plane lean before settling back.",
+  "asset": { "svg": "./assets/main.svg" },
+  "motion": {
+    "targets": "./motion/targets.json",
+    "timelines": "./motion/timelines.json",
+    "states": "./motion/states.json"
+  },
+  "accessibility": {
+    "title": "Telegram",
+    "description": "The Telegram paper plane drifting diagonally with a slight lean, then gliding back to rest.",
+    "decorative": false
+  },
+  "reducedMotion": { "strategy": "static", "fallbackState": "idle" }
+}

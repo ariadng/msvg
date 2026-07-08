@@ -8,12 +8,27 @@ import { fileURLToPath } from "node:url";
 
 const here = fileURLToPath(new URL(".", import.meta.url));
 const repoRoot = resolve(here, "../../..");
-const iconsRoot = resolve(here, "..");
+const materialRoot = resolve(here, "..");
+const socialRoot = resolve(repoRoot, "examples/social-icons");
 
-const ICONS = [
-  "home", "search", "menu", "close",
-  "settings", "favorite", "star", "add",
-  "delete", "notifications", "person", "shopping-cart",
+const SECTIONS = [
+  {
+    title: "Material Symbols",
+    base: "/pkg/material",
+    icons: [
+      "home", "search", "menu", "close",
+      "settings", "favorite", "star", "add",
+      "delete", "notifications", "person", "shopping-cart",
+    ],
+  },
+  {
+    title: "Social",
+    base: "/pkg/social",
+    icons: [
+      "facebook", "youtube", "instagram", "whatsapp",
+      "tiktok", "wechat", "telegram", "x",
+    ],
+  },
 ];
 
 const MIME = {
@@ -38,16 +53,18 @@ const server = createServer(async (req, res) => {
 
     if (url.pathname === "/") {
       file = join(here, "index.html");
-    } else if (url.pathname === "/icons.json") {
+    } else if (url.pathname === "/sections.json") {
       res.setHeader("content-type", MIME[".json"]);
-      res.end(JSON.stringify(ICONS));
+      res.end(JSON.stringify(SECTIONS));
       return;
     } else if (url.pathname.startsWith("/vendor/msvg-core/")) {
       file = safeJoin(join(repoRoot, "packages/core/dist"), url.pathname.slice("/vendor/msvg-core/".length));
     } else if (url.pathname.startsWith("/vendor/msvg-schema/")) {
       file = safeJoin(join(repoRoot, "packages/schema/dist"), url.pathname.slice("/vendor/msvg-schema/".length));
-    } else if (url.pathname.startsWith("/icons/")) {
-      file = safeJoin(iconsRoot, url.pathname.slice("/icons/".length));
+    } else if (url.pathname.startsWith("/pkg/material/")) {
+      file = safeJoin(materialRoot, url.pathname.slice("/pkg/material/".length));
+    } else if (url.pathname.startsWith("/pkg/social/")) {
+      file = safeJoin(socialRoot, url.pathname.slice("/pkg/social/".length));
     }
 
     if (!file) {

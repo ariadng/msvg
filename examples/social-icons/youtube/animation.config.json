@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0",
+  "id": "youtube",
+  "name": "YouTube",
+  "version": "0.1.0",
+  "description": "Animated YouTube logo with an entrance pop and a play-button press loop that dips and springs back.",
+  "asset": { "svg": "./assets/main.svg" },
+  "motion": {
+    "targets": "./motion/targets.json",
+    "timelines": "./motion/timelines.json",
+    "states": "./motion/states.json"
+  },
+  "accessibility": {
+    "title": "YouTube",
+    "description": "The YouTube logo pressing inward like a play button and springing back on the beat.",
+    "decorative": false
+  },
+  "reducedMotion": { "strategy": "static", "fallbackState": "idle" }
+}

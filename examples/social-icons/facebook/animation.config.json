@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0",
+  "id": "facebook",
+  "name": "Facebook",
+  "version": "0.1.0",
+  "description": "Animated Facebook logo with a soft entrance and a calm, confident scale-pulse loop.",
+  "asset": { "svg": "./assets/main.svg" },
+  "motion": {
+    "targets": "./motion/targets.json",
+    "timelines": "./motion/timelines.json",
+    "states": "./motion/states.json"
+  },
+  "accessibility": {
+    "title": "Facebook",
+    "description": "The Facebook logo breathing with a gentle, confident pulse.",
+    "decorative": false
+  },
+  "reducedMotion": { "strategy": "static", "fallbackState": "idle" }
+}

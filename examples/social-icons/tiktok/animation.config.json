@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0",
+  "id": "tiktok",
+  "name": "TikTok",
+  "version": "0.1.0",
+  "description": "Animated TikTok logo with a pop-in entrance and a bass-line double-thump scale loop.",
+  "asset": { "svg": "./assets/main.svg" },
+  "motion": {
+    "targets": "./motion/targets.json",
+    "timelines": "./motion/timelines.json",
+    "states": "./motion/states.json"
+  },
+  "accessibility": {
+    "title": "TikTok",
+    "description": "The TikTok logo pulsing to a rhythmic double-beat like a bass line.",
+    "decorative": false
+  },
+  "reducedMotion": { "strategy": "static", "fallbackState": "idle" }
+}

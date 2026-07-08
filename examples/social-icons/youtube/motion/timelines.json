@@ -1,0 +1,41 @@
+{
+  "intro": [
+    {
+      "target": "glyph",
+      "at": 0,
+      "keyframes": [
+        { "opacity": 0, "transform": "scale(0.86)" },
+        { "opacity": 1, "transform": "scale(1.03)", "offset": 0.7, "easing": "soft" },
+        { "opacity": 1, "transform": "scale(1)" }
+      ],
+      "options": { "duration": 440, "easing": "emphasized", "fill": "both" }
+    }
+  ],
+  "loadingLoop": [
+    {
+      "target": "glyph",
+      "at": 0,
+      "keyframes": [
+        { "transform": "scale(1)", "offset": 0, "easing": "standard" },
+        { "transform": "scale(0.94)", "offset": 0.12, "easing": "standard" },
+        { "transform": "scale(1.035)", "offset": 0.28, "easing": "bounceSoft" },
+        { "transform": "scale(0.99)", "offset": 0.4, "easing": "soft" },
+        { "transform": "scale(1)", "offset": 0.5, "easing": "soft" },
+        { "transform": "scale(1)", "offset": 1 }
+      ],
+      "options": { "duration": 1800, "easing": "soft", "fill": "both" }
+    }
+  ],
+  "hover": [
+    {
+      "target": "glyph",
+      "at": 0,
+      "keyframes": [
+        { "transform": "scale(1)" },
+        { "transform": "scale(0.94)", "offset": 0.35, "easing": "standard" },
+        { "transform": "scale(1)", "easing": "bounceSoft" }
+      ],
+      "options": { "duration": 420, "easing": "soft", "fill": "both" }
+    }
+  ]
+}

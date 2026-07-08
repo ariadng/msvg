@@ -1,0 +1,43 @@
+{
+  "intro": [
+    {
+      "target": "glyph",
+      "at": 0,
+      "keyframes": [
+        { "opacity": 0, "transform": "scale(0.84)" },
+        { "opacity": 1, "transform": "scale(1.04)", "offset": 0.7, "easing": "soft" },
+        { "opacity": 1, "transform": "scale(1)" }
+      ],
+      "options": { "duration": 460, "easing": "emphasized", "fill": "both" }
+    }
+  ],
+  "loadingLoop": [
+    {
+      "target": "glyph",
+      "at": 0,
+      "keyframes": [
+        { "transform": "rotate(0deg)", "offset": 0, "easing": "standard" },
+        { "transform": "rotate(-8deg)", "offset": 0.07, "easing": "standard" },
+        { "transform": "rotate(8deg)", "offset": 0.15, "easing": "standard" },
+        { "transform": "rotate(-5deg)", "offset": 0.23, "easing": "standard" },
+        { "transform": "rotate(5deg)", "offset": 0.31, "easing": "standard" },
+        { "transform": "rotate(0deg)", "offset": 0.4, "easing": "soft" },
+        { "transform": "rotate(0deg)", "offset": 1 }
+      ],
+      "options": { "duration": 2200, "easing": "soft", "fill": "both" }
+    }
+  ],
+  "hover": [
+    {
+      "target": "glyph",
+      "at": 0,
+      "keyframes": [
+        { "transform": "rotate(0deg)" },
+        { "transform": "rotate(-8deg)", "offset": 0.25, "easing": "standard" },
+        { "transform": "rotate(8deg)", "offset": 0.6, "easing": "standard" },
+        { "transform": "rotate(0deg)", "easing": "soft" }
+      ],
+      "options": { "duration": 500, "easing": "soft", "fill": "both" }
+    }
+  ]
+}

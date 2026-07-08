@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0",
+  "id": "whatsapp",
+  "name": "WhatsApp",
+  "version": "0.1.0",
+  "description": "Animated WhatsApp logo with a soft entrance and a ringing-wiggle loop — a quick burst of rotate swings, then a rest.",
+  "asset": { "svg": "./assets/main.svg" },
+  "motion": {
+    "targets": "./motion/targets.json",
+    "timelines": "./motion/timelines.json",
+    "states": "./motion/states.json"
+  },
+  "accessibility": {
+    "title": "WhatsApp",
+    "description": "The WhatsApp logo wiggling like a ringing phone in a short burst, then resting.",
+    "decorative": false
+  },
+  "reducedMotion": { "strategy": "static", "fallbackState": "idle" }
+}
