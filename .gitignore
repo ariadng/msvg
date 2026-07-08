@@ -3,3 +3,8 @@ dist/
 *.tsbuildinfo
 coverage/
 .DS_Store
+
+# msvg-mcp: built Claude Desktop bundle + build staging (never committed)
+dist-mcpb/
+*.mcpb
+packages/mcp/mcpb/icon.svg.png

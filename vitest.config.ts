@@ -10,6 +10,7 @@ export default defineConfig({
       "msvg-schema": r("./packages/schema/src/index.ts"),
       "msvg-core": r("./packages/core/src/index.ts"),
       "msvg-react": r("./packages/react/src/index.ts"),
+      "msvg-cli": r("./packages/cli/src/index.ts"),
     },
   },
   test: {

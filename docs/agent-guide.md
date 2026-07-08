@@ -19,6 +19,8 @@ Rules and workflow for AI agents editing msvg animation packages. The normative 
 
 Run `msvg summarize <package-dir>` first for a machine-friendly overview (safe files, targets, timelines, states, validation status).
 
+If you are running inside an MCP client (Claude Desktop or another editor) rather than a shell, the same workflow is available as MCP tools from the `msvg-mcp` server: `msvg_summarize` → edit the JSON → `msvg_validate` → `msvg_inspect`. The tools wrap the identical CLI logic. See [claude-integrations.md](./claude-integrations.md).
+
 ## Safe to edit
 
 - `motion/timelines.json`, `motion/states.json`, `motion/targets.json`, `motion/idle.css`, `animation.config.json`

@@ -1,0 +1,72 @@
+{
+  "manifest_version": "0.4",
+  "name": "msvg",
+  "display_name": "MotionSVG",
+  "version": "0.1.0",
+  "description": "Create, validate, inspect, and preview MotionSVG animation packages, and split SVG paths into subpaths — the msvg toolchain as MCP tools.",
+  "long_description": "msvg-mcp exposes the MotionSVG (msvg) toolchain over the Model Context Protocol. It provides eight tools: scaffold a new animation package (msvg_create), validate it against the schema and its SVG (msvg_validate), inspect and summarize its structure (msvg_inspect, msvg_summarize), resolve target selectors (msvg_check_targets), run a local preview server (msvg_preview_start / msvg_preview_stop), and split an SVG path into per-part subpaths for animation (msvg_split_subpaths). All directory arguments are absolute paths.",
+  "author": {
+    "name": "ariadng",
+    "email": "ariadng@gmail.com",
+    "url": "https://github.com/ariadng"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ariadng/msvg"
+  },
+  "homepage": "https://github.com/ariadng/msvg#readme",
+  "documentation": "https://github.com/ariadng/msvg/blob/main/docs/claude-integrations.md",
+  "support": "https://github.com/ariadng/msvg/issues",
+  "icon": "icon.png",
+  "license": "MIT",
+  "keywords": ["svg", "animation", "msvg", "motionsvg", "mcp"],
+  "server": {
+    "type": "node",
+    "entry_point": "server/bin/msvg-mcp.js",
+    "mcp_config": {
+      "command": "node",
+      "args": ["${__dirname}/server/bin/msvg-mcp.js"]
+    }
+  },
+  "tools": [
+    {
+      "name": "msvg_create",
+      "description": "Scaffold a new, valid MotionSVG animation package under an absolute parent directory."
+    },
+    {
+      "name": "msvg_validate",
+      "description": "Validate a package against the msvg schema and its SVG; returns a structured issue list and pass/fail."
+    },
+    {
+      "name": "msvg_inspect",
+      "description": "Print a human-readable overview of a package: assets, targets, timelines, and states."
+    },
+    {
+      "name": "msvg_check_targets",
+      "description": "Resolve every target selector against assets/main.svg and report matches and failures."
+    },
+    {
+      "name": "msvg_summarize",
+      "description": "Emit an AI-friendly Markdown summary of a package: safe files, names, and validation status."
+    },
+    {
+      "name": "msvg_preview_start",
+      "description": "Start a local (127.0.0.1) preview server with a control panel for a package; returns the URL."
+    },
+    {
+      "name": "msvg_preview_stop",
+      "description": "Stop one preview server by port, or all running previews."
+    },
+    {
+      "name": "msvg_split_subpaths",
+      "description": "Split an SVG path `d` string (or an .svg file's first path) into absolutized subpaths for per-part animation."
+    }
+  ],
+  "tools_generated": false,
+  "compatibility": {
+    "platforms": ["darwin", "win32", "linux"],
+    "runtimes": {
+      "node": ">=18.17"
+    }
+  }
+}

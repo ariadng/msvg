@@ -1,0 +1,51 @@
+{
+  "name": "msvg-mcp",
+  "version": "0.1.0",
+  "description": "Model Context Protocol server for msvg (MotionSVG) — create, validate, inspect, preview animation packages and split SVG subpaths from any MCP client",
+  "keywords": [
+    "svg",
+    "animation",
+    "mcp",
+    "model-context-protocol",
+    "msvg"
+  ],
+  "license": "MIT",
+  "author": "ariadng <ariadng@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ariadng/msvg.git",
+    "directory": "packages/mcp"
+  },
+  "homepage": "https://github.com/ariadng/msvg#readme",
+  "bugs": "https://github.com/ariadng/msvg/issues",
+  "type": "module",
+  "engines": {
+    "node": ">=18.17"
+  },
+  "bin": {
+    "msvg-mcp": "./bin/msvg-mcp.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "bin"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "build:mcpb": "node scripts/build-mcpb.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "msvg-cli": "0.1.0",
+    "zod": "^3.25.0"
+  }
+}

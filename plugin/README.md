@@ -9,6 +9,11 @@ This plugin packages the hard-won house rules for authoring animations that loop
 seamlessly and never leave the viewBox, so Claude produces packages that are correct the
 first time.
 
+> **Using Claude Desktop instead of Claude Code?** These skills and the `msvg-animator`
+> agent are Claude Code-only. Claude Desktop gets the msvg toolchain (validate, inspect,
+> summarize, preview, split-subpaths) as MCP tools via the `msvg-mcp` `.mcpb` bundle — see
+> [docs/claude-integrations.md](https://github.com/ariadng/msvg/blob/main/docs/claude-integrations.md).
+
 ## What you get
 
 **Skills** (invoke with `/msvg:<name>`, or let Claude trigger them by context):

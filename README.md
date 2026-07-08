@@ -14,10 +14,11 @@ No Lottie, no GSAP, no design-tool exports. The full specification lives in [Spe
 
 | Package | Description |
 | --- | --- |
-| [`msvg-core`](./packages/core) | Runtime: `createMsvg`, timeline playback, state machine, reduced motion, accessibility. Zero dependencies. |
+| [`msvg-core`](./packages/core) | Runtime: `createMsvg`, timeline playback, state machine, reduced motion, accessibility. No third-party runtime dependencies (only `msvg-schema`). |
 | [`msvg-schema`](./packages/schema) | TypeScript types, JSON Schemas, and the validator behind `msvg validate`. Zero dependencies. |
 | [`msvg-cli`](./packages/cli) | `msvg create / validate / inspect / check-targets / summarize / preview`. |
 | [`msvg-react`](./packages/react) | `<Msvg />` component and `useMsvg()` hook. |
+| [`msvg-mcp`](./packages/mcp) | Stdio MCP server (`msvg_*` tools) for Claude Desktop and other MCP clients. |
 
 ## Quick start
 
@@ -45,9 +46,9 @@ See [examples/inventory-agent](./examples/inventory-agent) for a complete animat
 - [Agent guide](./docs/agent-guide.md) — the editing workflow and rules for AI agents.
 - [Package format](./docs/package-format.md) — every file in an animation package.
 
-## Claude Code plugin
+## Claude
 
-Author msvg animations from inside [Claude Code](https://claude.com/claude-code):
+Author msvg animations from inside [Claude Code](https://claude.com/claude-code) with the plugin:
 
 ```text
 /plugin marketplace add ariadng/msvg
@@ -57,6 +58,10 @@ Author msvg animations from inside [Claude Code](https://claude.com/claude-code)
 Adds four skills — `/msvg:create` (scaffold a package), `/msvg:animate` (design meaningful
 motion), `/msvg:validate` (run the CLI), `/msvg:preview` (live gallery) — plus the
 `msvg:msvg-animator` agent. See [plugin/README.md](./plugin/README.md).
+
+For **Claude Desktop** and other MCP clients, the `msvg-mcp` server exposes the toolchain
+as `msvg_*` tools (installable as a one-click `.mcpb` bundle). See
+[docs/claude-integrations.md](./docs/claude-integrations.md).
 
 ## Development
 
