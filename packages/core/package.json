@@ -1,0 +1,45 @@
+{
+  "name": "msvg",
+  "version": "0.1.0",
+  "description": "msvg (MotionSVG) core runtime — schema-first SVG animation on native web primitives",
+  "keywords": [
+    "svg",
+    "animation",
+    "web-animations-api",
+    "state-machine",
+    "msvg"
+  ],
+  "license": "MIT",
+  "author": "ariadng <ariadng@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ariadng/msvg.git",
+    "directory": "packages/core"
+  },
+  "homepage": "https://github.com/ariadng/msvg#readme",
+  "bugs": "https://github.com/ariadng/msvg/issues",
+  "type": "module",
+  "engines": {
+    "node": ">=18.17"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "msvg-schema": "0.1.0"
+  }
+}

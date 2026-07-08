@@ -1,0 +1,8 @@
+{
+  "root": "[data-animation='inventory-agent']",
+  "body": "[data-part='body']",
+  "eyes": "[data-part='eyes']",
+  "leftArm": "[data-part='arm-left']",
+  "sparkles": "[data-part='sparkles']",
+  "loader": "[data-part='loader']"
+}

@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://msvg.dev/schemas/timelines.schema.json",
+  "title": "MsvgTimelines",
+  "description": "Named timelines, each an array of clips (motion/timelines.json). See Spec Section 10.",
+  "type": "object",
+  "propertyNames": {
+    "pattern": "^[a-z][a-zA-Z0-9]*$",
+    "description": "Timeline names should be camelCase (Section 32.4)."
+  },
+  "additionalProperties": {
+    "type": "array",
+    "items": { "$ref": "#/$defs/clip" }
+  },
+  "$defs": {
+    "clip": {
+      "type": "object",
+      "required": ["target", "at", "keyframes", "options"],
+      "additionalProperties": false,
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Logical target name from targets.json."
+        },
+        "at": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Start offset in milliseconds."
+        },
+        "keyframes": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "description": "A Web Animations API keyframe; prefer transform and opacity (Section 33.1)."
+          }
+        },
+        "options": {
+          "type": "object",
+          "required": ["duration"],
+          "additionalProperties": false,
+          "properties": {
+            "duration": {
+              "type": "number",
+              "exclusiveMinimum": 0,
+              "description": "Clip duration in milliseconds."
+            },
+            "easing": {
+              "type": "string",
+              "description": "An easing token (Section 18.1) or a raw CSS easing string."
+            },
+            "delay": {
+              "type": "number",
+              "description": "Additional delay in milliseconds, added to `at`."
+            },
+            "fill": {
+              "type": "string",
+              "enum": ["none", "forwards", "backwards", "both", "auto"]
+            },
+            "iterations": {
+              "type": "number",
+              "minimum": 0,
+              "description": "Finite repeat count within one cycle. Infinity is invalid (Section 16.1)."
+            },
+            "direction": {
+              "type": "string",
+              "enum": ["normal", "reverse", "alternate", "alternate-reverse"]
+            }
+          }
+        }
+      }
+    }
+  }
+}

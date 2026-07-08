@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://msvg.dev/schemas/states.schema.json",
+  "title": "MsvgStateMachine",
+  "description": "Event-driven animation states (motion/states.json). See Spec Section 11.",
+  "type": "object",
+  "required": ["initial", "states"],
+  "additionalProperties": false,
+  "properties": {
+    "initial": {
+      "type": "string",
+      "description": "Name of the initial state."
+    },
+    "states": {
+      "type": "object",
+      "propertyNames": {
+        "pattern": "^[a-z][a-zA-Z0-9]*$",
+        "description": "State names should be camelCase (Section 32.5)."
+      },
+      "additionalProperties": { "$ref": "#/$defs/state" }
+    }
+  },
+  "$defs": {
+    "state": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "onEnter": { "$ref": "#/$defs/action" },
+        "onExit": {
+          "$ref": "#/$defs/action",
+          "description": "Reserved for a future version. Ignored by the v1 runtime."
+        },
+        "on": {
+          "type": "object",
+          "propertyNames": {
+            "pattern": "^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$",
+            "description": "Event names should be UPPER_SNAKE_CASE (Section 32.6)."
+          },
+          "additionalProperties": {
+            "type": "string",
+            "description": "Target state name."
+          }
+        },
+        "final": {
+          "type": "boolean",
+          "description": "Marks an intentional dead-end state (Section 11.2)."
+        }
+      }
+    },
+    "action": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "timeline": {
+          "type": "string",
+          "description": "Name of a timeline from timelines.json."
+        },
+        "loop": {
+          "type": "boolean",
+          "description": "Restart the timeline each time it completes, until the state is exited."
+        }
+      }
+    }
+  }
+}

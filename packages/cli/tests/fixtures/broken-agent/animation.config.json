@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "1.0",
+  "id": "inventory-agent",
+  "name": "Inventory Agent",
+  "version": "0.1.0",
+  "description": "Animated SVG assistant for inventory monitoring states.",
+
+  "asset": {
+    "svg": "./assets/main.svg",
+    "preview": "./assets/preview.png"
+  },
+
+  "motion": {
+    "targets": "./motion/targets.json",
+    "timelines": "./motion/timelines.json",
+    "states": "./motion/states.json",
+    "idleCss": "./motion/idle.css"
+  },
+
+  "accessibility": {
+    "title": "Inventory Agent",
+    "description": "Animated assistant representing inventory monitoring.",
+    "decorative": false
+  },
+
+  "reducedMotion": {
+    "strategy": "static",
+    "fallbackState": "idle"
+  }
+}

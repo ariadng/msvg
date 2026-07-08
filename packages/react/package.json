@@ -1,0 +1,56 @@
+{
+  "name": "msvg-react",
+  "version": "0.1.0",
+  "description": "React adapter for msvg (MotionSVG) animation packages",
+  "keywords": [
+    "svg",
+    "animation",
+    "react",
+    "msvg"
+  ],
+  "license": "MIT",
+  "author": "ariadng <ariadng@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ariadng/msvg.git",
+    "directory": "packages/react"
+  },
+  "homepage": "https://github.com/ariadng/msvg#readme",
+  "bugs": "https://github.com/ariadng/msvg/issues",
+  "type": "module",
+  "engines": {
+    "node": ">=18.17"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "msvg": "0.1.0",
+    "msvg-schema": "0.1.0"
+  },
+  "peerDependencies": {
+    "react": ">=18"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/react": "^16.1.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}

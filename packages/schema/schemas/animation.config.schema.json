@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://msvg.dev/schemas/animation.config.schema.json",
+  "title": "MsvgAnimationConfig",
+  "description": "Animation manifest (animation.config.json). See Spec Section 7. The TypeScript validators in msvg-schema are the source of truth; this document is an editor/agent aid.",
+  "type": "object",
+  "required": ["schemaVersion", "id", "name", "asset", "motion"],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "enum": ["1.0"],
+      "description": "Package schema version (Section 36)."
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "description": "Unique, stable, kebab-case animation identifier (Section 7.1)."
+    },
+    "name": {
+      "type": "string",
+      "description": "Human-readable animation name."
+    },
+    "version": {
+      "type": "string",
+      "description": "Animation package version."
+    },
+    "description": {
+      "type": "string",
+      "description": "Short description of the animation's purpose."
+    },
+    "asset": {
+      "type": "object",
+      "required": ["svg"],
+      "additionalProperties": false,
+      "properties": {
+        "svg": {
+          "type": "string",
+          "description": "Relative path to the main SVG asset."
+        },
+        "preview": {
+          "type": "string",
+          "description": "Relative path to an optional preview image."
+        }
+      }
+    },
+    "motion": {
+      "type": "object",
+      "required": ["targets", "timelines"],
+      "additionalProperties": false,
+      "properties": {
+        "targets": {
+          "type": "string",
+          "description": "Relative path to targets.json."
+        },
+        "timelines": {
+          "type": "string",
+          "description": "Relative path to timelines.json."
+        },
+        "states": {
+          "type": "string",
+          "description": "Relative path to the optional states.json."
+        },
+        "idleCss": {
+          "type": "string",
+          "description": "Relative path to the optional idle.css."
+        }
+      }
+    },
+    "accessibility": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "decorative": {
+          "type": "boolean",
+          "description": "When true, the animation is treated as decorative (aria-hidden)."
+        }
+      }
+    },
+    "reducedMotion": {
+      "type": "object",
+      "required": ["strategy"],
+      "additionalProperties": false,
+      "properties": {
+        "strategy": {
+          "type": "string",
+          "enum": ["static", "fade", "shorten", "none"],
+          "description": "Reduced-motion strategy (Section 19.1)."
+        },
+        "fallbackState": {
+          "type": "string",
+          "description": "State to enter (without motion) when reduced motion applies."
+        }
+      }
+    }
+  }
+}

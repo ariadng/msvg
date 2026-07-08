@@ -1,0 +1,52 @@
+{
+  "name": "msvg-cli",
+  "version": "0.1.0",
+  "description": "CLI for msvg (MotionSVG) animation packages — create, validate, inspect, summarize, preview",
+  "keywords": [
+    "svg",
+    "animation",
+    "cli",
+    "validation",
+    "msvg"
+  ],
+  "license": "MIT",
+  "author": "ariadng <ariadng@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ariadng/msvg.git",
+    "directory": "packages/cli"
+  },
+  "homepage": "https://github.com/ariadng/msvg#readme",
+  "bugs": "https://github.com/ariadng/msvg/issues",
+  "type": "module",
+  "engines": {
+    "node": ">=18.17"
+  },
+  "bin": {
+    "msvg": "./bin/msvg.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "bin"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "msvg": "0.1.0",
+    "msvg-schema": "0.1.0",
+    "commander": "^13.0.0",
+    "linkedom": "^0.18.5",
+    "picocolors": "^1.1.1"
+  }
+}

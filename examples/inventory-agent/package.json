@@ -1,0 +1,13 @@
+{
+  "name": "msvg-example-inventory-agent",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Example msvg animation package: inventory agent (Spec section 34)",
+  "type": "module",
+  "devDependencies": {
+    "msvg-cli": "0.1.0",
+    "msvg": "0.1.0",
+    "msvg-schema": "0.1.0",
+    "linkedom": "^0.18.5"
+  }
+}

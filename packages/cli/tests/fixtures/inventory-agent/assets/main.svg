@@ -1,0 +1,20 @@
+<svg data-animation="inventory-agent" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" role="img">
+  <g data-part="body">
+    <rect x="146" y="176" width="220" height="200" rx="36" fill="#6366f1" />
+  </g>
+  <g data-part="eyes">
+    <circle cx="216" cy="262" r="16" fill="#ffffff" />
+    <circle cx="296" cy="262" r="16" fill="#ffffff" />
+  </g>
+  <g data-part="arm-left">
+    <rect x="104" y="252" width="52" height="18" rx="9" fill="#4f46e5" />
+  </g>
+  <g data-part="sparkles">
+    <circle cx="392" cy="150" r="9" fill="#fbbf24" />
+    <circle cx="150" cy="150" r="6" fill="#fbbf24" />
+  </g>
+  <g data-part="loader">
+    <circle cx="256" cy="412" r="26" fill="none" stroke="#6366f1" stroke-width="6"
+      stroke-dasharray="96 68" stroke-linecap="round" />
+  </g>
+</svg>

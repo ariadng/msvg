@@ -1,0 +1,55 @@
+<svg data-animation="inventory-agent" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" role="img">
+  <!-- Authored in the resting (final) visual state: renders correctly with no
+       animation applied (Spec Section 8.1). Semantic parts are grouped with
+       data-part attributes so timelines can target them by logical name. -->
+
+  <circle cx="256" cy="266" r="214" fill="#EEF2FF" />
+
+  <g data-part="body">
+    <!-- antenna -->
+    <line x1="256" y1="98" x2="256" y2="66" stroke="#4F46E5" stroke-width="8" stroke-linecap="round" />
+    <circle cx="256" cy="58" r="12" fill="#F59E0B" />
+    <!-- ears -->
+    <rect x="132" y="150" width="20" height="46" rx="10" fill="#4F46E5" />
+    <rect x="360" y="150" width="20" height="46" rx="10" fill="#4F46E5" />
+    <!-- head -->
+    <rect x="150" y="96" width="212" height="152" rx="34" fill="#6366F1" />
+    <!-- face screen -->
+    <rect x="176" y="120" width="160" height="104" rx="22" fill="#0F172A" />
+    <!-- neck -->
+    <rect x="236" y="244" width="40" height="24" fill="#4F46E5" />
+    <!-- torso -->
+    <rect x="166" y="262" width="180" height="152" rx="32" fill="#6366F1" />
+    <!-- chest panel -->
+    <rect x="196" y="292" width="120" height="94" rx="18" fill="#4F46E5" />
+    <!-- feet -->
+    <rect x="196" y="412" width="46" height="26" rx="12" fill="#4F46E5" />
+    <rect x="270" y="412" width="46" height="26" rx="12" fill="#4F46E5" />
+  </g>
+
+  <g data-part="eyes">
+    <circle cx="212" cy="166" r="16" fill="#22D3EE" />
+    <circle cx="300" cy="166" r="16" fill="#22D3EE" />
+    <path d="M224 196 q32 26 64 0" fill="none" stroke="#22D3EE" stroke-width="8" stroke-linecap="round" />
+  </g>
+
+  <g data-part="arm-left">
+    <!-- the agent's left arm (viewer's left), holding an inventory carton -->
+    <rect x="118" y="288" width="62" height="20" rx="10" fill="#4F46E5" />
+    <rect x="92" y="300" width="54" height="50" rx="6" fill="#FCD34D" />
+    <path d="M92 320 H146" stroke="#F59E0B" stroke-width="6" />
+    <path d="M119 300 V350" stroke="#F59E0B" stroke-width="6" />
+  </g>
+
+  <g data-part="sparkles">
+    <path d="M392 132 L398 144 L410 150 L398 156 L392 168 L386 156 L374 150 L386 144 Z" fill="#FBBF24" />
+    <path d="M132 107 L136 116 L145 120 L136 124 L132 133 L128 124 L119 120 L128 116 Z" fill="#FBBF24" />
+    <path d="M410 242 L413 249 L420 252 L413 255 L410 262 L407 255 L400 252 L407 249 Z" fill="#FBBF24" />
+  </g>
+
+  <g data-part="loader">
+    <!-- resting: a progress ring with track + an emerald quarter arc -->
+    <circle cx="256" cy="338" r="30" fill="none" stroke="#1E293B" stroke-opacity="0.25" stroke-width="8" />
+    <path d="M256 308 A30 30 0 0 1 286 338" fill="none" stroke="#34D399" stroke-width="8" stroke-linecap="round" />
+  </g>
+</svg>

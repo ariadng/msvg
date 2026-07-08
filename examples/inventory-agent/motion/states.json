@@ -1,0 +1,51 @@
+{
+  "initial": "idle",
+
+  "states": {
+    "idle": {
+      "on": {
+        "HOVER": "hovered",
+        "LOAD": "loading"
+      }
+    },
+
+    "hovered": {
+      "onEnter": {
+        "timeline": "hover"
+      },
+      "on": {
+        "LEAVE": "idle",
+        "LOAD": "loading"
+      }
+    },
+
+    "loading": {
+      "onEnter": {
+        "timeline": "loadingLoop",
+        "loop": true
+      },
+      "on": {
+        "RESOLVE": "success",
+        "REJECT": "error"
+      }
+    },
+
+    "success": {
+      "onEnter": {
+        "timeline": "success"
+      },
+      "on": {
+        "RESET": "idle"
+      }
+    },
+
+    "error": {
+      "onEnter": {
+        "timeline": "error"
+      },
+      "on": {
+        "RESET": "idle"
+      }
+    }
+  }
+}
