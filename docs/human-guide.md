@@ -5,8 +5,8 @@ How to consume an msvg animation package in an application. (Authoring/editing p
 ## Install
 
 ```bash
-npm install msvg          # vanilla
-npm install msvg msvg-react   # React
+npm install msvg-core          # vanilla
+npm install msvg-core msvg-react   # React
 ```
 
 ## Import an animation
@@ -24,7 +24,7 @@ This assumes a bundler that can import SVG as a raw string (`?raw` in Vite) and 
 Two modes — mount the packaged markup into a container, or attach to SVG already in your DOM:
 
 ```ts
-import { createMsvg } from "msvg";
+import { createMsvg } from "msvg-core";
 
 // container mode: msvg injects animation.svgMarkup
 const controller = createMsvg({ container: el, animation: inventoryAgent });

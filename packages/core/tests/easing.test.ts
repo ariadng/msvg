@@ -1,5 +1,5 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
-import { resolveEasing } from "msvg";
+import { resolveEasing } from "msvg-core";
 
 describe("resolveEasing", () => {
   afterEach(() => {

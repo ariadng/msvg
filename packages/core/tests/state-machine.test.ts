@@ -1,6 +1,6 @@
 import { describe, expect, it, vi } from "vitest";
-import { createStateMachine } from "msvg";
-import type { StateMachineActions } from "msvg";
+import { createStateMachine } from "msvg-core";
+import type { StateMachineActions } from "msvg-core";
 import { states } from "./fixtures.js";
 
 function makeActions() {

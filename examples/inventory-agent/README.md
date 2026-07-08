@@ -33,7 +33,7 @@ With a bundler (Vite/webpack/esbuild) that supports `?raw` SVG imports, CSS
 side-effect imports, and JSON modules:
 
 ```ts
-import { createMsvg } from "msvg";
+import { createMsvg } from "msvg-core";
 import { inventoryAgent } from "./examples/inventory-agent";
 
 const controller = createMsvg({

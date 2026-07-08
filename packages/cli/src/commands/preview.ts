@@ -36,7 +36,7 @@ function contentTypeFor(path: string): string {
 function resolveCorePath(): string | null {
   try {
     const require = createRequire(import.meta.url);
-    return require.resolve("msvg");
+    return require.resolve("msvg-core");
   } catch {
     return null;
   }

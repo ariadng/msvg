@@ -8,7 +8,7 @@ export default defineConfig({
     // Tests run against package sources so they never depend on build order.
     alias: {
       "msvg-schema": r("./packages/schema/src/index.ts"),
-      "msvg": r("./packages/core/src/index.ts"),
+      "msvg-core": r("./packages/core/src/index.ts"),
       "msvg-react": r("./packages/react/src/index.ts"),
     },
   },

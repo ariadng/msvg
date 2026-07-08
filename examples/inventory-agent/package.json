@@ -6,7 +6,7 @@
   "type": "module",
   "devDependencies": {
     "msvg-cli": "0.1.0",
-    "msvg": "0.1.0",
+    "msvg-core": "0.1.0",
     "msvg-schema": "0.1.0",
     "linkedom": "^0.18.5"
   }

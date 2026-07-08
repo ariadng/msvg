@@ -14,7 +14,7 @@ No Lottie, no GSAP, no design-tool exports. The full specification lives in [Spe
 
 | Package | Description |
 | --- | --- |
-| [`msvg`](./packages/core) | Runtime: `createMsvg`, timeline playback, state machine, reduced motion, accessibility. Zero dependencies. |
+| [`msvg-core`](./packages/core) | Runtime: `createMsvg`, timeline playback, state machine, reduced motion, accessibility. Zero dependencies. |
 | [`msvg-schema`](./packages/schema) | TypeScript types, JSON Schemas, and the validator behind `msvg validate`. Zero dependencies. |
 | [`msvg-cli`](./packages/cli) | `msvg create / validate / inspect / check-targets / summarize / preview`. |
 | [`msvg-react`](./packages/react) | `<Msvg />` component and `useMsvg()` hook. |
@@ -22,11 +22,11 @@ No Lottie, no GSAP, no design-tool exports. The full specification lives in [Spe
 ## Quick start
 
 ```bash
-npm install msvg
+npm install msvg-core
 ```
 
 ```ts
-import { createMsvg } from "msvg";
+import { createMsvg } from "msvg-core";
 import { inventoryAgent } from "./animations/inventory-agent";
 
 const controller = createMsvg({

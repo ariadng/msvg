@@ -7,7 +7,7 @@
  */
 
 import { useEffect, useRef, useState } from "react";
-import { createMsvg, type MsvgController } from "msvg";
+import { createMsvg, type MsvgController } from "msvg-core";
 import type { MsvgAnimationPackage } from "msvg-schema";
 
 /** Options for {@link useMsvg}. */

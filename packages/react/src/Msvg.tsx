@@ -15,7 +15,7 @@ import {
   useRef,
   type MutableRefObject,
 } from "react";
-import { createMsvg, type MsvgController } from "msvg";
+import { createMsvg, type MsvgController } from "msvg-core";
 import type { MsvgAnimationPackage } from "msvg-schema";
 
 /** Props for {@link Msvg}. Everything not listed here is a native `<div>` prop. */

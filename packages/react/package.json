@@ -39,7 +39,7 @@
     "build": "tsc -p tsconfig.json"
   },
   "dependencies": {
-    "msvg": "0.1.0",
+    "msvg-core": "0.1.0",
     "msvg-schema": "0.1.0"
   },
   "peerDependencies": {

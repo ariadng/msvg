@@ -1,5 +1,5 @@
 import { describe, it, expect, beforeEach, afterEach } from "vitest";
-import { createMsvg, type MsvgController } from "msvg";
+import { createMsvg, type MsvgController } from "msvg-core";
 import { readPackage } from "./helpers.js";
 import { installWaapiMock, setReducedMotionPreference } from "./waapi-mock.js";
 

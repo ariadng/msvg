@@ -1,5 +1,5 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
-import { playTimeline, playTimelineLoop } from "msvg";
+import { playTimeline, playTimelineLoop } from "msvg-core";
 import type { MsvgClip, MsvgTargets } from "msvg-schema";
 import { easings } from "msvg-schema";
 import { MockAnimation, flush, installWaapiMock } from "./waapi-mock.js";

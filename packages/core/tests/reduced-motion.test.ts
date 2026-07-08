@@ -3,7 +3,7 @@ import {
   prefersReducedMotion,
   reducedMotionDisablesLoop,
   transformTimelineForReducedMotion,
-} from "msvg";
+} from "msvg-core";
 import type { MsvgClip } from "msvg-schema";
 import { removeMatchMedia, setReducedMotionPreference } from "./waapi-mock.js";
 

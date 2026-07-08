@@ -2,7 +2,7 @@ import { describe, it, expect, beforeEach, afterEach } from "vitest";
 import { useMemo } from "react";
 import { render, cleanup, act } from "@testing-library/react";
 import { useMsvg } from "msvg-react";
-import type { MsvgController } from "msvg";
+import type { MsvgController } from "msvg-core";
 import { makeAnimation } from "./fixture.js";
 import { installWaapiMock, setReducedMotionPreference } from "./waapi-mock.js";
 

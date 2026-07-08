@@ -296,7 +296,7 @@ ${name}/
 ## Usage
 
 \`\`\`ts
-import { createMsvg } from "msvg";
+import { createMsvg } from "msvg-core";
 import { ${name.replace(/-([a-z])/g, (_, c) => c.toUpperCase())} } from "./${name}";
 
 const controller = createMsvg({

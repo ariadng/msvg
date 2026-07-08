@@ -11,7 +11,7 @@
     "examples/*"
   ],
   "scripts": {
-    "build": "npm run build --workspace=msvg-schema && npm run build --workspace=msvg && npm run build --workspace=msvg-cli && npm run build --workspace=msvg-react",
+    "build": "npm run build --workspace=msvg-schema && npm run build --workspace=msvg-core && npm run build --workspace=msvg-cli && npm run build --workspace=msvg-react",
     "test": "vitest run"
   },
   "devDependencies": {

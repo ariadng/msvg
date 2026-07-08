@@ -1,5 +1,5 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
-import { createMsvg } from "msvg";
+import { createMsvg } from "msvg-core";
 import type { MsvgPresetContext } from "msvg-schema";
 import {
   MockAnimation,

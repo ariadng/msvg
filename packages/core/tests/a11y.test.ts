@@ -1,5 +1,5 @@
 import { afterEach, describe, expect, it } from "vitest";
-import { applyAccessibility } from "msvg";
+import { applyAccessibility } from "msvg-core";
 import { makeConfig, mountRoot } from "./fixtures.js";
 
 afterEach(() => {

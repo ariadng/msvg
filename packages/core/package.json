@@ -1,5 +1,5 @@
 {
-  "name": "msvg",
+  "name": "msvg-core",
   "version": "0.1.0",
   "description": "msvg (MotionSVG) core runtime — schema-first SVG animation on native web primitives",
   "keywords": [

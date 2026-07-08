@@ -81,7 +81,7 @@ Human developers should be able to:
 Example desired usage:
 
 ```ts
-import { createMsvg } from "msvg";
+import { createMsvg } from "msvg-core";
 import { inventoryAgent } from "./animations/inventory-agent";
 
 const controller = createMsvg({
@@ -162,7 +162,7 @@ msvg/
 
 ### 5.1 Package Responsibilities
 
-#### `msvg`
+#### `msvg-core`
 
 The core runtime.
 
@@ -1082,7 +1082,7 @@ Defines custom animation functions for advanced cases that do not fit cleanly in
 Example:
 
 ```ts
-import type { MsvgPresetContext } from "msvg";
+import type { MsvgPresetContext } from "msvg-core";
 
 export function blink({ getTarget }: MsvgPresetContext) {
   const eyes = getTarget("eyes");
@@ -1214,7 +1214,7 @@ msvg
 Primary runtime function.
 
 ```ts
-import { createMsvg } from "msvg";
+import { createMsvg } from "msvg-core";
 
 const controller = createMsvg({
   root,
@@ -1898,13 +1898,13 @@ AI agents should:
 ### 28.1 Install
 
 ```bash
-npm install msvg
+npm install msvg-core
 ```
 
 For React:
 
 ```bash
-npm install msvg msvg-react
+npm install msvg-core msvg-react
 ```
 
 ### 28.2 Import Animation
@@ -1916,7 +1916,7 @@ import { inventoryAgent } from "./animations/inventory-agent";
 ### 28.3 Mount Animation
 
 ```ts
-import { createMsvg } from "msvg";
+import { createMsvg } from "msvg-core";
 
 const controller = createMsvg({
   root: document.querySelector("[data-animation='inventory-agent']")!,
@@ -2559,7 +2559,7 @@ Recommended package exports:
 
 ```json
 {
-  "name": "msvg",
+  "name": "msvg-core",
   "type": "module",
   "exports": {
     ".": {
@@ -2581,7 +2581,7 @@ msvg should version two things separately:
 Example:
 
 ```txt
-msvg@0.1.0
+msvg-core@0.1.0
 ```
 
 ### 36.2 Animation Schema Version
