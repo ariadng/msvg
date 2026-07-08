@@ -90,9 +90,10 @@ export function main(argv: string[] = process.argv): void {
     .argument("<path>", "path to an animation package directory")
     .description("Start a local preview server with a control panel")
     .option("-p, --port <port>", "port to listen on", "4321")
-    .action(async (path: string, opts: { port?: string }) => {
+    .option("-H, --host <host>", "interface to bind; use 0.0.0.0 to allow other devices on the network", "127.0.0.1")
+    .action(async (path: string, opts: { port?: string; host?: string }) => {
       const port = opts.port ? Number(opts.port) : undefined;
-      const result = await runPreview(path, { port });
+      const result = await runPreview(path, { port, host: opts.host });
       process.stdout.write(result.output + "\n");
       if (result.exitCode !== 0) process.exit(result.exitCode);
       // On success the server keeps running until the process is interrupted.
