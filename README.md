@@ -42,6 +42,15 @@ controller.send("LOAD");
 controller.send("RESOLVE");
 ```
 
+Or in React, with [`msvg-react`](./packages/react):
+
+```tsx
+import { Msvg } from "msvg-react";
+import { inventoryAgent } from "./animations/inventory-agent";
+
+<Msvg animation={inventoryAgent} onReady={(c) => c.send("LOAD")} />
+```
+
 See [examples/inventory-agent](./examples/inventory-agent) for a complete animation package, and the guides in [docs/](./docs):
 
 - [Human guide](./docs/human-guide.md) — installing, mounting, playing timelines, React usage.

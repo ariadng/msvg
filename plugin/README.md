@@ -78,7 +78,9 @@ rocket/
     └── states.json            # event-driven state machine
 ```
 
-Consume it in an app with `createMsvg({ container, animation })` from `msvg-core`. See the
+Consume it in an app with `createMsvg({ container, animation })` from `msvg-core`, or in
+React with `<Msvg animation={...} />` / `useMsvg()` from
+[`msvg-react`](https://www.npmjs.com/package/msvg-react). See the
 [msvg spec](https://github.com/ariadng/msvg/blob/main/Spec.md) and the
 [instagram example](https://github.com/ariadng/msvg/tree/main/examples/social-icons/instagram)
 for the canonical reference.

@@ -1,6 +1,6 @@
 ---
 name: create
-description: Scaffold a new MotionSVG (msvg) animation package — the folder of JSON motion files plus an SVG that msvg-core plays. Use when the user asks to create / start / scaffold / make a new msvg animation, a new animated icon package, or a MotionSVG package. Produces animation.config.json, assets/main.svg, motion/targets.json, motion/timelines.json, motion/states.json and ends by running the validator.
+description: Scaffold a new MotionSVG (msvg) animation package — the folder of JSON motion files plus an SVG that msvg-core plays. Use when the user asks to create / start / scaffold / make a new msvg animation, a new animated icon package, or a MotionSVG package, or asks how to use an msvg package in an app (vanilla or React). Produces animation.config.json, assets/main.svg, motion/targets.json, motion/timelines.json, motion/states.json, ends by running the validator, and shows how to consume the package with msvg-core or msvg-react.
 argument-hint: [package-name]
 ---
 
@@ -203,3 +203,32 @@ If you are inside the msvg monorepo, use the built CLI instead:
 
 A clean run ends with `Valid MotionSVG package.` Then, to see it move, use
 `/msvg:preview`.
+
+## Use it in an app
+
+The runtime consumes the package as one object: `{ config, targets, timelines, states,
+svgMarkup }`. With a bundler, import the JSON files and the SVG as a raw string (Vite:
+`?raw`); without one, assemble the same object with `fetch` (Spec §14.1).
+
+Vanilla (`msvg-core`):
+
+```ts
+import { createMsvg } from "msvg-core";
+
+const controller = createMsvg({ container, animation });
+controller.send("LOAD");   // enter the loading loop
+```
+
+React (`msvg-react`):
+
+```tsx
+import { Msvg } from "msvg-react";
+
+<Msvg animation={animation} onReady={(c) => c.send("LOAD")} />
+```
+
+`<Msvg />` also takes `initialState`, `state` (controlled), `onStateChange`,
+`events` (DOM event → state-machine event, e.g. `{ mouseenter: "HOVER" }`),
+`autoplay`, and `respectReducedMotion`; everything else passes through to the host
+`<div>`. When you need to own the host element, `useMsvg({ animation })` returns
+`{ ref, controller }` instead.
