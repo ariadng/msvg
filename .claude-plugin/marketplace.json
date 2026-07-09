@@ -11,7 +11,7 @@
       "name": "msvg",
       "source": "./plugin",
       "description": "Author, validate, and preview MotionSVG (msvg) animation packages: scaffold valid packages, apply the house animation rules (linear clip easing, seamless loops, bounds discipline), run the validator, and serve a live gallery. Ships the msvg-animator agent plus /msvg:create, /msvg:animate, /msvg:validate, and /msvg:preview skills.",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "author": {
         "name": "ariadng",
         "email": "ariadng@gmail.com"

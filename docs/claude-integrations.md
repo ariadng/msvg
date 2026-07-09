@@ -82,7 +82,7 @@ the repo (the build output is gitignored). Build it on demand:
 
 ```bash
 npm install                       # once, at the repo root
-npm run build:mcpb -w msvg-mcp    # → packages/mcp/dist-mcpb/msvg-0.1.0.mcpb
+npm run build:mcpb -w msvg-mcp    # → packages/mcp/dist-mcpb/msvg-0.1.1.mcpb
 ```
 
 Under the hood the build script packs the server with the MCPB CLI (`npx -y
@@ -90,7 +90,7 @@ Under the hood the build script packs the server with the MCPB CLI (`npx -y
 
 ### Install it
 
-- **Double-click** `packages/mcp/dist-mcpb/msvg-0.1.0.mcpb` — Claude Desktop opens the
+- **Double-click** `packages/mcp/dist-mcpb/msvg-0.1.1.mcpb` — Claude Desktop opens the
   install prompt, or
 - In Claude Desktop: **Settings → Extensions**, then add the `.mcpb` file.
 

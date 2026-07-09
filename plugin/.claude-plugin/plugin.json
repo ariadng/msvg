@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "msvg",
   "displayName": "MotionSVG",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Author, validate, and preview MotionSVG (msvg) animation packages — schema-first SVG animations built on native WAAPI. Scaffolds valid packages, teaches seamless-loop and bounds-safe authoring rules, runs the validator, and serves a live gallery.",
   "author": {
     "name": "ariadng",

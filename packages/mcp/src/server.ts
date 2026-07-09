@@ -33,7 +33,7 @@ import { firstPathData, splitSubpaths } from "./subpaths.js";
 import { readFileSync } from "node:fs";
 
 /** Package version, kept in sync with package.json. */
-export const MSVG_MCP_VERSION = "0.1.0";
+export const MSVG_MCP_VERSION = "0.1.1";
 
 const DEFAULT_PREVIEW_PORT = 4321;
 const PREVIEW_HOST = "127.0.0.1";

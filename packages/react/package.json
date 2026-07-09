@@ -1,6 +1,6 @@
 {
   "name": "msvg-react",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "React adapter for msvg (MotionSVG) animation packages",
   "keywords": [
     "svg",
@@ -39,8 +39,8 @@
     "build": "tsc -p tsconfig.json"
   },
   "dependencies": {
-    "msvg-core": "0.1.0",
-    "msvg-schema": "0.1.0"
+    "msvg-core": "0.1.1",
+    "msvg-schema": "0.1.1"
   },
   "peerDependencies": {
     "react": ">=18"

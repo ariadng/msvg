@@ -1,6 +1,6 @@
 {
   "name": "msvg-cli",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "CLI for msvg (MotionSVG) animation packages — create, validate, inspect, summarize, preview",
   "keywords": [
     "svg",
@@ -43,8 +43,8 @@
     "build": "tsc -p tsconfig.json"
   },
   "dependencies": {
-    "msvg-core": "0.1.0",
-    "msvg-schema": "0.1.0",
+    "msvg-core": "0.1.1",
+    "msvg-schema": "0.1.1",
     "commander": "^13.0.0",
     "linkedom": "^0.18.5",
     "picocolors": "^1.1.1"

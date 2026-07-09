@@ -1,6 +1,6 @@
 {
   "name": "msvg-core",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "msvg (MotionSVG) core runtime — schema-first SVG animation on native web primitives",
   "keywords": [
     "svg",
@@ -40,6 +40,6 @@
     "build": "tsc -p tsconfig.json"
   },
   "dependencies": {
-    "msvg-schema": "0.1.0"
+    "msvg-schema": "0.1.1"
   }
 }

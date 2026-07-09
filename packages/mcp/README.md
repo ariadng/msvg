@@ -35,7 +35,7 @@ nesting: a `start` inside another subpath's bounds is almost always its hole.
 
 ## Install in Claude Desktop (.mcpb, double-click)
 
-1. Build the bundle (see below) or download `msvg-0.1.0.mcpb`.
+1. Build the bundle (see below) or download `msvg-0.1.1.mcpb`.
 2. Double-click the `.mcpb` file, or drag it into Claude Desktop's
    **Settings → Extensions**.
 3. Enable the extension. The eight `msvg_*` tools become available in chats.
@@ -87,7 +87,7 @@ npx vitest run packages/mcp      # run the test suite
 Build the Claude Desktop bundle:
 
 ```bash
-npm run build:mcpb -w msvg-mcp   # → packages/mcp/dist-mcpb/msvg-0.1.0.mcpb
+npm run build:mcpb -w msvg-mcp   # → packages/mcp/dist-mcpb/msvg-0.1.1.mcpb
 ```
 
 `build:mcpb` packs `msvg-mcp`, installs the tarball in a clean directory so its

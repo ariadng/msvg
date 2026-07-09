@@ -1,6 +1,6 @@
 {
   "name": "msvg-mcp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Model Context Protocol server for msvg (MotionSVG) — create, validate, inspect, preview animation packages and split SVG subpaths from any MCP client",
   "keywords": [
     "svg",
@@ -45,7 +45,7 @@
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.29.0",
-    "msvg-cli": "0.1.0",
+    "msvg-cli": "0.1.1",
     "zod": "^3.25.0"
   }
 }

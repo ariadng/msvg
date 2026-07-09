@@ -2,7 +2,7 @@
   "manifest_version": "0.4",
   "name": "msvg",
   "display_name": "MotionSVG",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Create, validate, inspect, and preview MotionSVG animation packages, and split SVG paths into subpaths — the msvg toolchain as MCP tools.",
   "long_description": "msvg-mcp exposes the MotionSVG (msvg) toolchain over the Model Context Protocol. It provides eight tools: scaffold a new animation package (msvg_create), validate it against the schema and its SVG (msvg_validate), inspect and summarize its structure (msvg_inspect, msvg_summarize), resolve target selectors (msvg_check_targets), run a local preview server (msvg_preview_start / msvg_preview_stop), and split an SVG path into per-part subpaths for animation (msvg_split_subpaths). All directory arguments are absolute paths.",
   "author": {

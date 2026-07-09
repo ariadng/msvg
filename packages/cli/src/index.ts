@@ -37,7 +37,7 @@ export function main(argv: string[] = process.argv): void {
   program
     .name("msvg")
     .description("MotionSVG — create, validate, inspect, and preview SVG animation packages")
-    .version("0.1.0");
+    .version("0.1.1");
 
   program
     .command("create")

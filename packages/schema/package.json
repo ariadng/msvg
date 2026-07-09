@@ -1,6 +1,6 @@
 {
   "name": "msvg-schema",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "JSON Schemas, TypeScript types, and validation for msvg (MotionSVG) animation packages",
   "keywords": [
     "svg",
