@@ -45,7 +45,7 @@ vendors all dependencies, so nothing else needs to be installed.
 
 ## Use from a generic MCP client
 
-Once published to npm, configure the server to run via `npx`:
+Configure the server to run via `npx` (published on npm as [`msvg-mcp`](https://www.npmjs.com/package/msvg-mcp)):
 
 ```json
 {

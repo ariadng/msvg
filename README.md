@@ -12,6 +12,8 @@ No Lottie, no GSAP, no design-tool exports. The full specification lives in [Spe
 
 ## Packages
 
+All published on npm.
+
 | Package | Description |
 | --- | --- |
 | [`msvg-core`](./packages/core) | Runtime: `createMsvg`, timeline playback, state machine, reduced motion, accessibility. No third-party runtime dependencies (only `msvg-schema`). |
@@ -59,8 +61,9 @@ Adds four skills — `/msvg:create` (scaffold a package), `/msvg:animate` (desig
 motion), `/msvg:validate` (run the CLI), `/msvg:preview` (live gallery) — plus the
 `msvg:msvg-animator` agent. See [plugin/README.md](./plugin/README.md).
 
-For **Claude Desktop** and other MCP clients, the `msvg-mcp` server exposes the toolchain
-as `msvg_*` tools (installable as a one-click `.mcpb` bundle). See
+For **Claude Desktop** and other MCP clients, the [`msvg-mcp`](https://www.npmjs.com/package/msvg-mcp)
+server exposes the toolchain as `msvg_*` tools — install the one-click `.mcpb` bundle, or point
+any MCP client at `npx -y msvg-mcp`. See
 [docs/claude-integrations.md](./docs/claude-integrations.md).
 
 ## Development

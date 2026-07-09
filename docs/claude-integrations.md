@@ -133,21 +133,19 @@ Code, add it to the project's `.mcp.json`:
 The same `command`/`args` shape works in other MCP clients that accept a stdio server
 command.
 
-> **Note.** The `npx -y msvg-mcp` form requires `msvg-mcp` to be published to npm. Until
-> it is, run the server directly from a checkout:
->
-> ```json
-> {
->   "mcpServers": {
->     "msvg": {
->       "command": "node",
->       "args": ["packages/mcp/bin/msvg-mcp.js"]
->     }
->   }
-> }
-> ```
->
-> (Run `npm install && npm run build -w msvg-mcp` first so the server's `dist/` exists.)
+Working from a checkout instead (e.g. developing msvg itself)? Point at the built binary
+— run `npm install && npm run build -w msvg-mcp` first so the server's `dist/` exists:
+
+```json
+{
+  "mcpServers": {
+    "msvg": {
+      "command": "node",
+      "args": ["packages/mcp/bin/msvg-mcp.js"]
+    }
+  }
+}
+```
 
 The tools are identical to the eight listed above; only the transport differs from the
 `.mcpb` install.
